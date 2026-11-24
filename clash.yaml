@@ -2004,7 +2004,7 @@ proxies:
             Host: speakpro.lol
         path: /service/collect/6b25cc95808a/
 proxy-groups:
-    - name: PROXY
+    - name: Ключики ;3
       type: select
       proxies:
         - proxy
@@ -2148,4 +2148,4 @@ proxy-groups:
         - Белый список 1b
         - Белый список 12a 2
 rules:
-    - MATCH,PROXY
+    - MATCH,Ключики ;3
