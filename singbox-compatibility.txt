@@ -1,0 +1,14 @@
+sing-box compatibility report
+Nodes unsupported by sing-box: 11
+
+proxy (vless: xhttp transport is not supported by sing-box)
+proxy 2 (vless: xhttp transport is not supported by sing-box)
+proxy 3 (vless: xhttp transport is not supported by sing-box)
+proxy-9 (vless: xhttp transport is not supported by sing-box)
+proxy 4 (vless: xhttp transport is not supported by sing-box)
+proxy 5 (vless: xhttp transport is not supported by sing-box)
+proxy-8 (vless: xhttp transport is not supported by sing-box)
+Швеция (vless: xhttp transport is not supported by sing-box)
+proxy-1 (vless: xhttp transport is not supported by sing-box)
+Казахстан 2 (vless: xhttp transport is not supported by sing-box)
+Казахстан 3 (vless: xhttp transport is not supported by sing-box)
