@@ -91,26 +91,26 @@ proxy-groups:
   - name: Ключики ;3
     type: select
     proxies:
-      - Белый список 21b
+      - Румыния N1 (Торренты)
+      - Белый список 33a
+      - Белый список 33b
+      - Белый список 31a
+      - Белый список 31b
+      - Белый список 32a
       - Белый список 30b
-      - Белый список 21a
       - Белый список 30a
+      - Белый список 21b
+      - Белый список 32a 2
+      - Белый список 21a
+      - Белый список 32b
       - Белый список 2b
       - Белый список 24a
       - Белый список 24b
       - Белый список 2a
-      - Белый список 32b
       - Белый список 10a
-      - Белые списки ниже
       - Белый список 12a
       - Белый список 23a
       - Белый список 23b
-      - Белый список 31a
-      - Белый список 31b
-      - Белый список 32a
-      - Белый список 33a
-      - Белый список 33b
-      - Белый список 32a 2
       - Белый список 23b 2
       - Белые списки | 2
       - Белый список 23a 2
@@ -249,18 +249,89 @@ rules:
   - RULE-SET,whitelist-domains,DIRECT
   - MATCH,Ключики ;3
 proxies:
-  - name: Белый список 21b
+  - name: Румыния N1 (Торренты)
     type: vless
-    server: 5.188.114.226
+    server: 196.245.156.50
+    port: 443
+    client-fingerprint: firefox
+    network: xhttp
+    reality-opts:
+      public-key: jIq_COD-tIXTvgDn-TslFGtB_a8HVgUOOIlUByv8fkg
+      short-id: 8718c58d3d51db59
+    servername: i0.photo.2gis.com
+    tls: true
+    udp: true
+    uuid: 958e4608-6994-44df-975f-221ad2d0b132
+    xhttp-opts:
+      mode: packet-up
+      path: /api/client/update
+  - name: Белый список 33a
+    type: vless
+    server: 158.160.144.108
+    port: 7443
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+    reality-opts:
+      public-key: JxwG7rAbNCd_C82p9K69AZDWh51fri2nm3wLHHrfyiw
+      short-id: 7755e972daf8eec8
+    servername: i0.photo.2gis.com
+    tls: true
+    udp: true
+    uuid: e384e5e8-a2bc-4042-a157-635b86d6b90f
+  - name: Белый список 33b
+    type: vless
+    server: 158.160.144.108
+    port: 7443
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+    reality-opts:
+      public-key: JxwG7rAbNCd_C82p9K69AZDWh51fri2nm3wLHHrfyiw
+      short-id: 7755e972daf8eec8
+    servername: max.ru
+    tls: true
+    udp: true
+    uuid: e384e5e8-a2bc-4042-a157-635b86d6b90f
+  - name: Белый список 31a
+    type: vless
+    server: 158.160.144.108
     port: 8443
     client-fingerprint: firefox
-    grpc-opts:
-      grpc-service-name: grpc
-    network: grpc
+    flow: xtls-rprx-vision
+    network: tcp
     reality-opts:
-      public-key: WV58fGQd270mAtuAYhep9LXoVKTI0kiF4rCRaXAumWc
-      short-id: 16ee3a5f0387c553
+      public-key: JxwG7rAbNCd_C82p9K69AZDWh51fri2nm3wLHHrfyiw
+      short-id: 7755e972daf8eec8
+    servername: i0.photo.2gis.com
+    tls: true
+    udp: true
+    uuid: e384e5e8-a2bc-4042-a157-635b86d6b90f
+  - name: Белый список 31b
+    type: vless
+    server: 158.160.144.108
+    port: 8443
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+    reality-opts:
+      public-key: JxwG7rAbNCd_C82p9K69AZDWh51fri2nm3wLHHrfyiw
+      short-id: 7755e972daf8eec8
     servername: max.ru
+    tls: true
+    udp: true
+    uuid: e384e5e8-a2bc-4042-a157-635b86d6b90f
+  - name: Белый список 32a
+    type: vless
+    server: 51.250.119.97
+    port: 8443
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+    reality-opts:
+      public-key: JxwG7rAbNCd_C82p9K69AZDWh51fri2nm3wLHHrfyiw
+      short-id: 7755e972daf8eec8
+    servername: i0.photo.2gis.com
     tls: true
     udp: true
     uuid: e384e5e8-a2bc-4042-a157-635b86d6b90f
@@ -278,6 +349,49 @@ proxies:
     tls: true
     udp: true
     uuid: e384e5e8-a2bc-4042-a157-635b86d6b90f
+  - name: Белый список 30a
+    type: vless
+    server: 89.208.209.199
+    port: 8443
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+    reality-opts:
+      public-key: JxwG7rAbNCd_C82p9K69AZDWh51fri2nm3wLHHrfyiw
+      short-id: 7755e972daf8eec8
+    servername: i0.photo.2gis.com
+    tls: true
+    udp: true
+    uuid: e384e5e8-a2bc-4042-a157-635b86d6b90f
+  - name: Белый список 21b
+    type: vless
+    server: 5.188.114.226
+    port: 8443
+    client-fingerprint: firefox
+    grpc-opts:
+      grpc-service-name: grpc
+    network: grpc
+    reality-opts:
+      public-key: WV58fGQd270mAtuAYhep9LXoVKTI0kiF4rCRaXAumWc
+      short-id: 16ee3a5f0387c553
+    servername: max.ru
+    tls: true
+    udp: true
+    uuid: e384e5e8-a2bc-4042-a157-635b86d6b90f
+  - name: Белый список 32a 2
+    type: vless
+    server: 51.250.119.97
+    port: 8443
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+    reality-opts:
+      public-key: JxwG7rAbNCd_C82p9K69AZDWh51fri2nm3wLHHrfyiw
+      short-id: 7755e972daf8eec8
+    servername: i0.photo.2gis.com
+    tls: true
+    udp: true
+    uuid: 2ef168f7-77f7-4cb7-9b4e-fa777b4c5d6a
   - name: Белый список 21a
     type: vless
     server: 5.188.114.226
@@ -293,9 +407,9 @@ proxies:
     tls: true
     udp: true
     uuid: e384e5e8-a2bc-4042-a157-635b86d6b90f
-  - name: Белый список 30a
+  - name: Белый список 32b
     type: vless
-    server: 89.208.209.199
+    server: 51.250.119.97
     port: 8443
     client-fingerprint: firefox
     flow: xtls-rprx-vision
@@ -303,7 +417,7 @@ proxies:
     reality-opts:
       public-key: JxwG7rAbNCd_C82p9K69AZDWh51fri2nm3wLHHrfyiw
       short-id: 7755e972daf8eec8
-    servername: i0.photo.2gis.com
+    servername: max.ru
     tls: true
     udp: true
     uuid: e384e5e8-a2bc-4042-a157-635b86d6b90f
@@ -367,20 +481,6 @@ proxies:
     tls: true
     udp: true
     uuid: e384e5e8-a2bc-4042-a157-635b86d6b90f
-  - name: Белый список 32b
-    type: vless
-    server: 51.250.119.97
-    port: 8443
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    network: tcp
-    reality-opts:
-      public-key: JxwG7rAbNCd_C82p9K69AZDWh51fri2nm3wLHHrfyiw
-      short-id: 7755e972daf8eec8
-    servername: max.ru
-    tls: true
-    udp: true
-    uuid: e384e5e8-a2bc-4042-a157-635b86d6b90f
   - name: Белый список 10a
     type: vless
     server: i0c2ta1dst.newwl.pro
@@ -397,21 +497,6 @@ proxies:
       headers:
         Host: i0c2ta1dst.newwl.pro
       path: /static/telemetry/5f9034e6121d/
-  - name: Белые списки ниже
-    type: vless
-    server: 176.109.94.215
-    port: 8443
-    client-fingerprint: firefox
-    grpc-opts:
-      grpc-service-name: grpc
-    network: grpc
-    reality-opts:
-      public-key: WV58fGQd270mAtuAYhep9LXoVKTI0kiF4rCRaXAumWc
-      short-id: 16ee3a5f0387c553
-    servername: i0.photo.2gis.com
-    tls: true
-    udp: true
-    uuid: e384e5e8-a2bc-4042-a157-635b86d6b90f
   - name: Белый список 12a
     type: vless
     server: tochkacdn.top
@@ -458,90 +543,6 @@ proxies:
     tls: true
     udp: true
     uuid: e384e5e8-a2bc-4042-a157-635b86d6b90f
-  - name: Белый список 31a
-    type: vless
-    server: 158.160.144.108
-    port: 8443
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    network: tcp
-    reality-opts:
-      public-key: JxwG7rAbNCd_C82p9K69AZDWh51fri2nm3wLHHrfyiw
-      short-id: 7755e972daf8eec8
-    servername: i0.photo.2gis.com
-    tls: true
-    udp: true
-    uuid: e384e5e8-a2bc-4042-a157-635b86d6b90f
-  - name: Белый список 31b
-    type: vless
-    server: 158.160.144.108
-    port: 8443
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    network: tcp
-    reality-opts:
-      public-key: JxwG7rAbNCd_C82p9K69AZDWh51fri2nm3wLHHrfyiw
-      short-id: 7755e972daf8eec8
-    servername: max.ru
-    tls: true
-    udp: true
-    uuid: e384e5e8-a2bc-4042-a157-635b86d6b90f
-  - name: Белый список 32a
-    type: vless
-    server: 51.250.119.97
-    port: 8443
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    network: tcp
-    reality-opts:
-      public-key: JxwG7rAbNCd_C82p9K69AZDWh51fri2nm3wLHHrfyiw
-      short-id: 7755e972daf8eec8
-    servername: i0.photo.2gis.com
-    tls: true
-    udp: true
-    uuid: e384e5e8-a2bc-4042-a157-635b86d6b90f
-  - name: Белый список 33a
-    type: vless
-    server: 158.160.144.108
-    port: 7443
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    network: tcp
-    reality-opts:
-      public-key: JxwG7rAbNCd_C82p9K69AZDWh51fri2nm3wLHHrfyiw
-      short-id: 7755e972daf8eec8
-    servername: i0.photo.2gis.com
-    tls: true
-    udp: true
-    uuid: e384e5e8-a2bc-4042-a157-635b86d6b90f
-  - name: Белый список 33b
-    type: vless
-    server: 158.160.144.108
-    port: 7443
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    network: tcp
-    reality-opts:
-      public-key: JxwG7rAbNCd_C82p9K69AZDWh51fri2nm3wLHHrfyiw
-      short-id: 7755e972daf8eec8
-    servername: max.ru
-    tls: true
-    udp: true
-    uuid: e384e5e8-a2bc-4042-a157-635b86d6b90f
-  - name: Белый список 32a 2
-    type: vless
-    server: 51.250.119.97
-    port: 8443
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    network: tcp
-    reality-opts:
-      public-key: JxwG7rAbNCd_C82p9K69AZDWh51fri2nm3wLHHrfyiw
-      short-id: 7755e972daf8eec8
-    servername: i0.photo.2gis.com
-    tls: true
-    udp: true
-    uuid: 2ef168f7-77f7-4cb7-9b4e-fa777b4c5d6a
   - name: Белый список 23b 2
     type: vless
     server: 5.188.115.20
