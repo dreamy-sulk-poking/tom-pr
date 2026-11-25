@@ -91,6 +91,33 @@ proxy-groups:
   - name: Ключики ;3
     type: select
     proxies:
+      - Белый список 21b
+      - Белый список 30b
+      - Белый список 21a
+      - Белый список 30a
+      - Белый список 2b
+      - Белый список 24a
+      - Белый список 24b
+      - Белый список 2a
+      - Белый список 32b
+      - Белый список 10a
+      - Белые списки ниже
+      - Белый список 12a
+      - Белый список 23a
+      - Белый список 23b
+      - Белый список 31a
+      - Белый список 31b
+      - Белый список 32a
+      - Белый список 33a
+      - Белый список 33b
+      - Белый список 32a 2
+      - Белый список 23b 2
+      - Белые списки | 2
+      - Белый список 23a 2
+      - Белый список 21a 2
+      - Белый список 21b 2
+      - Белый список 24b 2
+      - Белый список 32b 2
       - 'Автовыбор: Основные'
       - Основной — Польша
       - 'При ограничениях #3'
@@ -110,90 +137,46 @@ proxy-groups:
       - 'При ограничениях #5'
       - 'При ограничениях #6'
       - proxy
-      - Швеция (YouTube без рекламы)
       - Россия-2
       - Швеция
-      - Великобритания
       - Финляндия (резерв)
       - Финляндия
       - Эстония
-      - ОАЭ
-      - Китай
       - Латвия
       - 🇩🇪 o1_Germany
-      - Китай 2
-      - Беларусь
-      - Албания (YouTube без рекламы)
-      - Франция (Gemini, Торренты)
-      - Белый список 23b
-      - Эстония 2
       - proxy 2
-      - Беларусь 2
-      - Италия
-      - Чехия
-      - Белый список 32a
       - proxy 3
-      - Вьетнам
       - Нидерланды
       - 🇸🇪 o2_Sweden_Hysteria_2
-      - Великобритания 2
       - 🇨🇳 fallback
       - proxy 4
       - proxy 5
-      - Германия
-      - Эстония 3
       - 'Германия #2'
-      - Литва (YouTube без рекламы)
-      - Турция
       - o7_Sw
-      - Италия 2
       - proxy 6
       - Польша
       - Финляндия 2
-      - Авто выбор
-      - Египет
-      - Вьетнам 2
       - proxy 7
       - o5_Netherland
-      - Албания (YouTube без рекламы) 2
-      - Португалия
-      - Турция 2
       - 🇨🇳 fallback 2
       - Польша 2
-      - Португалия 2
       - США
-      - Египет 2
       - Германия 2
       - Швеция 2
       - США 2
-      - Белые списки | 2
       - 🇫🇷 o4_France_Cascade
       - proxy 8
       - Казахстан
       - 🇪🇪 o3_RU_Estonia
       - 🇨🇳 fallback 3
-      - Белый список 23a
-      - Авто выбор 2
-      - Франция (Gemini, Торренты) 2
-      - Польша 3
-      - Белый список 21a
       - Казахстан 2
-      - Белый список 21b
-      - Белый список 24b
       - proxy 9
-      - Белый список 32b
       - Япония
       - 🇷🇺 bridge-russia
-      - Чехия 2
       - 🇨🇳 fallback 4
-      - Антарктида
       - Япония 2
-      - Нидерланды 2
-      - ОАЭ 2
       - 🇨🇳 fallback 5
-      - Швейцария (Gemini)
       - США 3
-      - Антарктида 2
       - 🇷🇺 bridge-russia 2
       - proxy 10
       - proxy 11
@@ -201,38 +184,13 @@ proxy-groups:
       - Финляндия-NEW
       - Авто | Самый быстрый
       - proxy 13
-      - Нидерланды 3
+      - Нидерланды 2
       - Казахстан 3
       - 🇸🇪 o8_Sweden_2
-      - Австрия (Gemini)
       - Россия
-      - Австрия 2
-      - Польша (Резерв)
-      - Кипр
-      - Испания (YouTube без рекламы)
-      - Армения
       - Россия 2
-      - Исландия
-      - Виргинские острова
-      - Украина
-      - Таджикистан
-      - Польша (Резерв) 2
       - Россия 3
-      - Нидерланды 4
-      - Австрия (Gemini) 2
-      - Польша 4
-      - Германия 3
-      - Швейцария (Gemini) 2
-      - Швеция (YouTube без рекламы) 2
-      - Литва (YouTube без рекламы) 2
-      - Кипр 2
-      - Испания (YouTube без рекламы) 2
-      - Армения 2
       - Россия 2 2
-      - Исландия 2
-      - Виргинские острова 2
-      - Украина 2
-      - Таджикистан 2
 rule-providers:
   private-domains:
     type: http
@@ -291,6 +249,402 @@ rules:
   - RULE-SET,whitelist-domains,DIRECT
   - MATCH,Ключики ;3
 proxies:
+  - name: Белый список 21b
+    type: vless
+    server: 5.188.114.226
+    port: 8443
+    client-fingerprint: firefox
+    grpc-opts:
+      grpc-service-name: grpc
+    network: grpc
+    reality-opts:
+      public-key: WV58fGQd270mAtuAYhep9LXoVKTI0kiF4rCRaXAumWc
+      short-id: 16ee3a5f0387c553
+    servername: max.ru
+    tls: true
+    udp: true
+    uuid: e384e5e8-a2bc-4042-a157-635b86d6b90f
+  - name: Белый список 30b
+    type: vless
+    server: 89.208.209.199
+    port: 8443
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+    reality-opts:
+      public-key: JxwG7rAbNCd_C82p9K69AZDWh51fri2nm3wLHHrfyiw
+      short-id: 7755e972daf8eec8
+    servername: max.ru
+    tls: true
+    udp: true
+    uuid: e384e5e8-a2bc-4042-a157-635b86d6b90f
+  - name: Белый список 21a
+    type: vless
+    server: 5.188.114.226
+    port: 8443
+    client-fingerprint: firefox
+    grpc-opts:
+      grpc-service-name: grpc
+    network: grpc
+    reality-opts:
+      public-key: WV58fGQd270mAtuAYhep9LXoVKTI0kiF4rCRaXAumWc
+      short-id: 16ee3a5f0387c553
+    servername: i0.photo.2gis.com
+    tls: true
+    udp: true
+    uuid: e384e5e8-a2bc-4042-a157-635b86d6b90f
+  - name: Белый список 30a
+    type: vless
+    server: 89.208.209.199
+    port: 8443
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+    reality-opts:
+      public-key: JxwG7rAbNCd_C82p9K69AZDWh51fri2nm3wLHHrfyiw
+      short-id: 7755e972daf8eec8
+    servername: i0.photo.2gis.com
+    tls: true
+    udp: true
+    uuid: e384e5e8-a2bc-4042-a157-635b86d6b90f
+  - name: Белый список 2b
+    type: vless
+    server: 188.225.35.245
+    port: 8443
+    client-fingerprint: firefox
+    grpc-opts:
+      grpc-service-name: grpc
+    network: grpc
+    reality-opts:
+      public-key: WV58fGQd270mAtuAYhep9LXoVKTI0kiF4rCRaXAumWc
+      short-id: 16ee3a5f0387c553
+    servername: max.ru
+    tls: true
+    udp: true
+    uuid: e384e5e8-a2bc-4042-a157-635b86d6b90f
+  - name: Белый список 24a
+    type: vless
+    server: 31.129.42.97
+    port: 8443
+    client-fingerprint: firefox
+    grpc-opts:
+      grpc-service-name: grpc
+    network: grpc
+    reality-opts:
+      public-key: WV58fGQd270mAtuAYhep9LXoVKTI0kiF4rCRaXAumWc
+      short-id: 16ee3a5f0387c553
+    servername: i0.photo.2gis.com
+    tls: true
+    udp: true
+    uuid: e384e5e8-a2bc-4042-a157-635b86d6b90f
+  - name: Белый список 24b
+    type: vless
+    server: 31.129.42.97
+    port: 8443
+    client-fingerprint: firefox
+    grpc-opts:
+      grpc-service-name: grpc
+    network: grpc
+    reality-opts:
+      public-key: WV58fGQd270mAtuAYhep9LXoVKTI0kiF4rCRaXAumWc
+      short-id: 16ee3a5f0387c553
+    servername: max.ru
+    tls: true
+    udp: true
+    uuid: e384e5e8-a2bc-4042-a157-635b86d6b90f
+  - name: Белый список 2a
+    type: vless
+    server: 188.225.35.245
+    port: 8443
+    client-fingerprint: firefox
+    grpc-opts:
+      grpc-service-name: grpc
+    network: grpc
+    reality-opts:
+      public-key: WV58fGQd270mAtuAYhep9LXoVKTI0kiF4rCRaXAumWc
+      short-id: 16ee3a5f0387c553
+    servername: i0.photo.2gis.com
+    tls: true
+    udp: true
+    uuid: e384e5e8-a2bc-4042-a157-635b86d6b90f
+  - name: Белый список 32b
+    type: vless
+    server: 51.250.119.97
+    port: 8443
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+    reality-opts:
+      public-key: JxwG7rAbNCd_C82p9K69AZDWh51fri2nm3wLHHrfyiw
+      short-id: 7755e972daf8eec8
+    servername: max.ru
+    tls: true
+    udp: true
+    uuid: e384e5e8-a2bc-4042-a157-635b86d6b90f
+  - name: Белый список 10a
+    type: vless
+    server: i0c2ta1dst.newwl.pro
+    port: 443
+    alpn:
+      - http/1.1
+    client-fingerprint: firefox
+    network: ws
+    servername: i0c2ta1dst.newwl.pro
+    tls: true
+    udp: true
+    uuid: e384e5e8-a2bc-4042-a157-635b86d6b90f
+    ws-opts:
+      headers:
+        Host: i0c2ta1dst.newwl.pro
+      path: /static/telemetry/5f9034e6121d/
+  - name: Белые списки ниже
+    type: vless
+    server: 176.109.94.215
+    port: 8443
+    client-fingerprint: firefox
+    grpc-opts:
+      grpc-service-name: grpc
+    network: grpc
+    reality-opts:
+      public-key: WV58fGQd270mAtuAYhep9LXoVKTI0kiF4rCRaXAumWc
+      short-id: 16ee3a5f0387c553
+    servername: i0.photo.2gis.com
+    tls: true
+    udp: true
+    uuid: e384e5e8-a2bc-4042-a157-635b86d6b90f
+  - name: Белый список 12a
+    type: vless
+    server: tochkacdn.top
+    port: 443
+    alpn:
+      - http/1.1
+    client-fingerprint: firefox
+    network: ws
+    servername: unlik.club
+    tls: true
+    udp: true
+    uuid: e384e5e8-a2bc-4042-a157-635b86d6b90f
+    ws-opts:
+      headers:
+        Host: tochkacdn.top
+      path: /service/collect/6b25cc95808a/
+  - name: Белый список 23a
+    type: vless
+    server: 5.188.115.20
+    port: 8443
+    client-fingerprint: firefox
+    grpc-opts:
+      grpc-service-name: grpc
+    network: grpc
+    reality-opts:
+      public-key: WV58fGQd270mAtuAYhep9LXoVKTI0kiF4rCRaXAumWc
+      short-id: 16ee3a5f0387c553
+    servername: i0.photo.2gis.com
+    tls: true
+    udp: true
+    uuid: e384e5e8-a2bc-4042-a157-635b86d6b90f
+  - name: Белый список 23b
+    type: vless
+    server: 5.188.115.20
+    port: 8443
+    client-fingerprint: firefox
+    grpc-opts:
+      grpc-service-name: grpc
+    network: grpc
+    reality-opts:
+      public-key: WV58fGQd270mAtuAYhep9LXoVKTI0kiF4rCRaXAumWc
+      short-id: 16ee3a5f0387c553
+    servername: max.ru
+    tls: true
+    udp: true
+    uuid: e384e5e8-a2bc-4042-a157-635b86d6b90f
+  - name: Белый список 31a
+    type: vless
+    server: 158.160.144.108
+    port: 8443
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+    reality-opts:
+      public-key: JxwG7rAbNCd_C82p9K69AZDWh51fri2nm3wLHHrfyiw
+      short-id: 7755e972daf8eec8
+    servername: i0.photo.2gis.com
+    tls: true
+    udp: true
+    uuid: e384e5e8-a2bc-4042-a157-635b86d6b90f
+  - name: Белый список 31b
+    type: vless
+    server: 158.160.144.108
+    port: 8443
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+    reality-opts:
+      public-key: JxwG7rAbNCd_C82p9K69AZDWh51fri2nm3wLHHrfyiw
+      short-id: 7755e972daf8eec8
+    servername: max.ru
+    tls: true
+    udp: true
+    uuid: e384e5e8-a2bc-4042-a157-635b86d6b90f
+  - name: Белый список 32a
+    type: vless
+    server: 51.250.119.97
+    port: 8443
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+    reality-opts:
+      public-key: JxwG7rAbNCd_C82p9K69AZDWh51fri2nm3wLHHrfyiw
+      short-id: 7755e972daf8eec8
+    servername: i0.photo.2gis.com
+    tls: true
+    udp: true
+    uuid: e384e5e8-a2bc-4042-a157-635b86d6b90f
+  - name: Белый список 33a
+    type: vless
+    server: 158.160.144.108
+    port: 7443
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+    reality-opts:
+      public-key: JxwG7rAbNCd_C82p9K69AZDWh51fri2nm3wLHHrfyiw
+      short-id: 7755e972daf8eec8
+    servername: i0.photo.2gis.com
+    tls: true
+    udp: true
+    uuid: e384e5e8-a2bc-4042-a157-635b86d6b90f
+  - name: Белый список 33b
+    type: vless
+    server: 158.160.144.108
+    port: 7443
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+    reality-opts:
+      public-key: JxwG7rAbNCd_C82p9K69AZDWh51fri2nm3wLHHrfyiw
+      short-id: 7755e972daf8eec8
+    servername: max.ru
+    tls: true
+    udp: true
+    uuid: e384e5e8-a2bc-4042-a157-635b86d6b90f
+  - name: Белый список 32a 2
+    type: vless
+    server: 51.250.119.97
+    port: 8443
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+    reality-opts:
+      public-key: JxwG7rAbNCd_C82p9K69AZDWh51fri2nm3wLHHrfyiw
+      short-id: 7755e972daf8eec8
+    servername: i0.photo.2gis.com
+    tls: true
+    udp: true
+    uuid: 2ef168f7-77f7-4cb7-9b4e-fa777b4c5d6a
+  - name: Белый список 23b 2
+    type: vless
+    server: 5.188.115.20
+    port: 8443
+    client-fingerprint: firefox
+    grpc-opts:
+      grpc-service-name: grpc
+    network: grpc
+    reality-opts:
+      public-key: WV58fGQd270mAtuAYhep9LXoVKTI0kiF4rCRaXAumWc
+      short-id: 16ee3a5f0387c553
+    servername: max.ru
+    tls: true
+    udp: true
+    uuid: 2ef168f7-77f7-4cb7-9b4e-fa777b4c5d6a
+  - name: Белые списки | 2
+    type: vless
+    server: 95.163.232.57
+    port: 5443
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+    reality-opts:
+      public-key: X8xcJHpXNQAs5jFbU_2WTQ5DzU3YdYh1tAHhsMc-lgY
+      short-id: 28237fabf9f09fc6
+    servername: verysweet.golubika.cloud
+    tls: true
+    udp: true
+    uuid: a8cd8251-92d2-4432-9ade-42566b1729da
+  - name: Белый список 23a 2
+    type: vless
+    server: 5.188.115.20
+    port: 8443
+    client-fingerprint: firefox
+    grpc-opts:
+      grpc-service-name: grpc
+    network: grpc
+    reality-opts:
+      public-key: WV58fGQd270mAtuAYhep9LXoVKTI0kiF4rCRaXAumWc
+      short-id: 16ee3a5f0387c553
+    servername: i0.photo.2gis.com
+    tls: true
+    udp: true
+    uuid: 2ef168f7-77f7-4cb7-9b4e-fa777b4c5d6a
+  - name: Белый список 21a 2
+    type: vless
+    server: 5.188.114.226
+    port: 8443
+    client-fingerprint: firefox
+    grpc-opts:
+      grpc-service-name: grpc
+    network: grpc
+    reality-opts:
+      public-key: WV58fGQd270mAtuAYhep9LXoVKTI0kiF4rCRaXAumWc
+      short-id: 16ee3a5f0387c553
+    servername: i0.photo.2gis.com
+    tls: true
+    udp: true
+    uuid: 2ef168f7-77f7-4cb7-9b4e-fa777b4c5d6a
+  - name: Белый список 21b 2
+    type: vless
+    server: 5.188.114.226
+    port: 8443
+    client-fingerprint: firefox
+    grpc-opts:
+      grpc-service-name: grpc
+    network: grpc
+    reality-opts:
+      public-key: WV58fGQd270mAtuAYhep9LXoVKTI0kiF4rCRaXAumWc
+      short-id: 16ee3a5f0387c553
+    servername: max.ru
+    tls: true
+    udp: true
+    uuid: 2ef168f7-77f7-4cb7-9b4e-fa777b4c5d6a
+  - name: Белый список 24b 2
+    type: vless
+    server: 31.129.42.97
+    port: 8443
+    client-fingerprint: firefox
+    grpc-opts:
+      grpc-service-name: grpc
+    network: grpc
+    reality-opts:
+      public-key: WV58fGQd270mAtuAYhep9LXoVKTI0kiF4rCRaXAumWc
+      short-id: 16ee3a5f0387c553
+    servername: max.ru
+    tls: true
+    udp: true
+    uuid: 2ef168f7-77f7-4cb7-9b4e-fa777b4c5d6a
+  - name: Белый список 32b 2
+    type: vless
+    server: 51.250.119.97
+    port: 8443
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+    reality-opts:
+      public-key: JxwG7rAbNCd_C82p9K69AZDWh51fri2nm3wLHHrfyiw
+      short-id: 7755e972daf8eec8
+    servername: max.ru
+    tls: true
+    udp: true
+    uuid: 2ef168f7-77f7-4cb7-9b4e-fa777b4c5d6a
   - name: 'Автовыбор: Основные'
     type: vless
     server: shop.gta-trade.com
@@ -546,20 +900,6 @@ proxies:
     tls: true
     udp: true
     uuid: 3cb462d6-ba85-49f2-bb80-0899a5e0391b
-  - name: Швеция (YouTube без рекламы)
-    type: vless
-    server: sw-n1.gsupport.support
-    port: 443
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    network: tcp
-    reality-opts:
-      public-key: hyOYRfDSIYyqALQt3N2H0RjK8gbV1JvPTkNACC4PJF8
-      short-id: 8718c58d3d51db59
-    servername: sw3.magazinnarubeva.ru
-    tls: true
-    udp: true
-    uuid: aa54d9f0-35aa-430a-a64d-d406022a9b8c
   - name: Россия-2
     type: vless
     server: ru.menzyla.ru
@@ -586,20 +926,6 @@ proxies:
     tls: true
     udp: true
     uuid: 22096b73-2638-467d-bc4d-452e832dda5b
-  - name: Великобритания
-    type: vless
-    server: en-n1.gsupport.support
-    port: 443
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    network: tcp
-    reality-opts:
-      public-key: hyOYRfDSIYyqALQt3N2H0RjK8gbV1JvPTkNACC4PJF8
-      short-id: 8718c58d3d51db59
-    servername: en1.findreplayfoals.com
-    tls: true
-    udp: true
-    uuid: 958e4608-6994-44df-975f-221ad2d0b132
   - name: Финляндия (резерв)
     type: vless
     server: finland2.banovano.space
@@ -642,34 +968,6 @@ proxies:
     xhttp-opts:
       mode: auto
       path: /
-  - name: ОАЭ
-    type: vless
-    server: uae.gsupport.support
-    port: 4443
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    network: tcp
-    reality-opts:
-      public-key: jIq_COD-tIXTvgDn-TslFGtB_a8HVgUOOIlUByv8fkg
-      short-id: 8718c58d3d51db59
-    servername: pl2.findreplayfoals.com
-    tls: true
-    udp: true
-    uuid: aa54d9f0-35aa-430a-a64d-d406022a9b8c
-  - name: Китай
-    type: vless
-    server: ch.gsupport.support
-    port: 3443
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    network: tcp
-    reality-opts:
-      public-key: jIq_COD-tIXTvgDn-TslFGtB_a8HVgUOOIlUByv8fkg
-      short-id: 8718c58d3d51db59
-    servername: pl3.greenzone12.com
-    tls: true
-    udp: true
-    uuid: 958e4608-6994-44df-975f-221ad2d0b132
   - name: Латвия
     type: vless
     server: finland3.banovano.space
@@ -697,91 +995,6 @@ proxies:
     tls: true
     udp: true
     uuid: a8cd8251-92d2-4432-9ade-42566b1729da
-  - name: Китай 2
-    type: vless
-    server: ch.gsupport.support
-    port: 3443
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    network: tcp
-    reality-opts:
-      public-key: jIq_COD-tIXTvgDn-TslFGtB_a8HVgUOOIlUByv8fkg
-      short-id: 8718c58d3d51db59
-    servername: pl2.magazinnarubeva.ru
-    tls: true
-    udp: true
-    uuid: aa54d9f0-35aa-430a-a64d-d406022a9b8c
-  - name: Беларусь
-    type: vless
-    server: bel.gsupport.support
-    port: 1443
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    network: tcp
-    reality-opts:
-      public-key: jIq_COD-tIXTvgDn-TslFGtB_a8HVgUOOIlUByv8fkg
-      short-id: 8718c58d3d51db59
-    servername: pl2.freehiliters.com
-    tls: true
-    udp: true
-    uuid: aa54d9f0-35aa-430a-a64d-d406022a9b8c
-  - name: Албания (YouTube без рекламы)
-    type: vless
-    server: al-n1.gsupport.support
-    port: 443
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    network: tcp
-    reality-opts:
-      public-key: trN5x0amt2YuVzF2vZnK294YBAuh_zl5QkZjPyWz-TI
-      short-id: 8718c58d3d51db59
-    servername: al2.wolffast.net
-    tls: true
-    udp: true
-    uuid: 958e4608-6994-44df-975f-221ad2d0b132
-  - name: Франция (Gemini, Торренты)
-    type: vless
-    server: fr-m1.gsupport.support
-    port: 443
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    network: tcp
-    reality-opts:
-      public-key: jIq_COD-tIXTvgDn-TslFGtB_a8HVgUOOIlUByv8fkg
-      short-id: 8718c58d3d51db59
-    servername: fr1.findreplayfoals.com
-    tls: true
-    udp: true
-    uuid: 958e4608-6994-44df-975f-221ad2d0b132
-  - name: Белый список 23b
-    type: vless
-    server: 5.188.115.20
-    port: 8443
-    client-fingerprint: firefox
-    grpc-opts:
-      grpc-service-name: grpc
-    network: grpc
-    reality-opts:
-      public-key: WV58fGQd270mAtuAYhep9LXoVKTI0kiF4rCRaXAumWc
-      short-id: 16ee3a5f0387c553
-    servername: max.ru
-    tls: true
-    udp: true
-    uuid: 2ef168f7-77f7-4cb7-9b4e-fa777b4c5d6a
-  - name: Эстония 2
-    type: vless
-    server: es-n1.gsupport.support
-    port: 443
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    network: tcp
-    reality-opts:
-      public-key: trN5x0amt2YuVzF2vZnK294YBAuh_zl5QkZjPyWz-TI
-      short-id: 8718c58d3d51db59
-    servername: jp2.greenzone12.com
-    tls: true
-    udp: true
-    uuid: aa54d9f0-35aa-430a-a64d-d406022a9b8c
   - name: proxy 2
     type: vless
     server: cu.puflino.com
@@ -796,62 +1009,6 @@ proxies:
     tls: true
     udp: true
     uuid: 7daed536-c1c8-497f-a4d5-3865dc3e08be
-  - name: Беларусь 2
-    type: vless
-    server: bel.gsupport.support
-    port: 1443
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    network: tcp
-    reality-opts:
-      public-key: jIq_COD-tIXTvgDn-TslFGtB_a8HVgUOOIlUByv8fkg
-      short-id: 8718c58d3d51db59
-    servername: pl2.spidermanshopping.com
-    tls: true
-    udp: true
-    uuid: 958e4608-6994-44df-975f-221ad2d0b132
-  - name: Италия
-    type: vless
-    server: it-n1.gsupport.support
-    port: 443
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    network: tcp
-    reality-opts:
-      public-key: hyOYRfDSIYyqALQt3N2H0RjK8gbV1JvPTkNACC4PJF8
-      short-id: 8718c58d3d51db59
-    servername: li3.findreplayfoals.com
-    tls: true
-    udp: true
-    uuid: 958e4608-6994-44df-975f-221ad2d0b132
-  - name: Чехия
-    type: vless
-    server: cz-n1.gsupport.support
-    port: 4443
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    network: tcp
-    reality-opts:
-      public-key: hyOYRfDSIYyqALQt3N2H0RjK8gbV1JvPTkNACC4PJF8
-      short-id: 8718c58d3d51db59
-    servername: pr1.promocodiums.com
-    tls: true
-    udp: true
-    uuid: 958e4608-6994-44df-975f-221ad2d0b132
-  - name: Белый список 32a
-    type: vless
-    server: 51.250.119.97
-    port: 8443
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    network: tcp
-    reality-opts:
-      public-key: JxwG7rAbNCd_C82p9K69AZDWh51fri2nm3wLHHrfyiw
-      short-id: 7755e972daf8eec8
-    servername: i0.photo.2gis.com
-    tls: true
-    udp: true
-    uuid: 2ef168f7-77f7-4cb7-9b4e-fa777b4c5d6a
   - name: proxy 3
     type: vless
     server: de.puflino.com
@@ -864,20 +1021,6 @@ proxies:
     tls: true
     udp: true
     uuid: 3cb462d6-ba85-49f2-bb80-0899a5e0391b
-  - name: Вьетнам
-    type: vless
-    server: vi.gsupport.support
-    port: 2443
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    network: tcp
-    reality-opts:
-      public-key: jIq_COD-tIXTvgDn-TslFGtB_a8HVgUOOIlUByv8fkg
-      short-id: 8718c58d3d51db59
-    servername: pl2.promocodiums.com
-    tls: true
-    udp: true
-    uuid: 958e4608-6994-44df-975f-221ad2d0b132
   - name: Нидерланды
     type: vless
     server: netherlands3.banovano.space
@@ -902,20 +1045,6 @@ proxies:
       - h3
     password: a8cd8251-92d2-4432-9ade-42566b1729da
     sni: she.golubika.cloud
-  - name: Великобритания 2
-    type: vless
-    server: en-n1.gsupport.support
-    port: 443
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    network: tcp
-    reality-opts:
-      public-key: hyOYRfDSIYyqALQt3N2H0RjK8gbV1JvPTkNACC4PJF8
-      short-id: 8718c58d3d51db59
-    servername: en2.freehiliters.com
-    tls: true
-    udp: true
-    uuid: aa54d9f0-35aa-430a-a64d-d406022a9b8c
   - name: 🇨🇳 fallback
     type: vless
     server: 193.202.113.126
@@ -958,34 +1087,6 @@ proxies:
     tls: true
     udp: true
     uuid: 3cb462d6-ba85-49f2-bb80-0899a5e0391b
-  - name: Германия
-    type: vless
-    server: de-n3.gsupport.support
-    port: 443
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    network: tcp
-    reality-opts:
-      public-key: jIq_COD-tIXTvgDn-TslFGtB_a8HVgUOOIlUByv8fkg
-      short-id: 8718c58d3d51db59
-    servername: de2.promocodiums.com
-    tls: true
-    udp: true
-    uuid: aa54d9f0-35aa-430a-a64d-d406022a9b8c
-  - name: Эстония 3
-    type: vless
-    server: es-n1.gsupport.support
-    port: 443
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    network: tcp
-    reality-opts:
-      public-key: trN5x0amt2YuVzF2vZnK294YBAuh_zl5QkZjPyWz-TI
-      short-id: 8718c58d3d51db59
-    servername: jp1.greenzone12.com
-    tls: true
-    udp: true
-    uuid: 958e4608-6994-44df-975f-221ad2d0b132
   - name: 'Германия #2'
     type: vless
     server: germany4.banovano.space
@@ -1000,34 +1101,6 @@ proxies:
     tls: true
     udp: true
     uuid: b52b781d-2074-4951-a164-ff6e2cf5d1ce
-  - name: Литва (YouTube без рекламы)
-    type: vless
-    server: li-n1.gsupport.support
-    port: 443
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    network: tcp
-    reality-opts:
-      public-key: hyOYRfDSIYyqALQt3N2H0RjK8gbV1JvPTkNACC4PJF8
-      short-id: 8718c58d3d51db59
-    servername: li3.findreplayfoals.com
-    tls: true
-    udp: true
-    uuid: aa54d9f0-35aa-430a-a64d-d406022a9b8c
-  - name: Турция
-    type: vless
-    server: tr-n1.gsupport.support
-    port: 443
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    network: tcp
-    reality-opts:
-      public-key: jIq_COD-tIXTvgDn-TslFGtB_a8HVgUOOIlUByv8fkg
-      short-id: 8718c58d3d51db59
-    servername: pl2.wolffast.net
-    tls: true
-    udp: true
-    uuid: 958e4608-6994-44df-975f-221ad2d0b132
   - name: o7_Sw
     type: vless
     server: she.golubika.cloud
@@ -1042,20 +1115,6 @@ proxies:
     tls: true
     udp: true
     uuid: a8cd8251-92d2-4432-9ade-42566b1729da
-  - name: Италия 2
-    type: vless
-    server: it-n1.gsupport.support
-    port: 443
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    network: tcp
-    reality-opts:
-      public-key: hyOYRfDSIYyqALQt3N2H0RjK8gbV1JvPTkNACC4PJF8
-      short-id: 8718c58d3d51db59
-    servername: li1.wolffast.net
-    tls: true
-    udp: true
-    uuid: aa54d9f0-35aa-430a-a64d-d406022a9b8c
   - name: proxy 6
     type: vless
     server: 95.133.247.20
@@ -1097,48 +1156,6 @@ proxies:
     tls: true
     udp: true
     uuid: 07de69b1-858a-473d-8a8b-c49d1deb45d8
-  - name: Авто выбор
-    type: vless
-    server: auto.gsupport.support
-    port: 443
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    network: tcp
-    reality-opts:
-      public-key: hyOYRfDSIYyqALQt3N2H0RjK8gbV1JvPTkNACC4PJF8
-      short-id: 8718c58d3d51db59
-    servername: en1.spidermanshopping.com
-    tls: true
-    udp: true
-    uuid: aa54d9f0-35aa-430a-a64d-d406022a9b8c
-  - name: Египет
-    type: vless
-    server: eg.gsupport.support
-    port: 1443
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    network: tcp
-    reality-opts:
-      public-key: jIq_COD-tIXTvgDn-TslFGtB_a8HVgUOOIlUByv8fkg
-      short-id: 8718c58d3d51db59
-    servername: pl3.magazinnarubeva.ru
-    tls: true
-    udp: true
-    uuid: 958e4608-6994-44df-975f-221ad2d0b132
-  - name: Вьетнам 2
-    type: vless
-    server: vi.gsupport.support
-    port: 2443
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    network: tcp
-    reality-opts:
-      public-key: jIq_COD-tIXTvgDn-TslFGtB_a8HVgUOOIlUByv8fkg
-      short-id: 8718c58d3d51db59
-    servername: pl2.spidermanshopping.com
-    tls: true
-    udp: true
-    uuid: aa54d9f0-35aa-430a-a64d-d406022a9b8c
   - name: proxy 7
     type: vless
     server: det-a.guildharbor.net
@@ -1168,48 +1185,6 @@ proxies:
     tls: true
     udp: true
     uuid: a8cd8251-92d2-4432-9ade-42566b1729da
-  - name: Албания (YouTube без рекламы) 2
-    type: vless
-    server: al-n1.gsupport.support
-    port: 443
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    network: tcp
-    reality-opts:
-      public-key: trN5x0amt2YuVzF2vZnK294YBAuh_zl5QkZjPyWz-TI
-      short-id: 8718c58d3d51db59
-    servername: al3.findreplayfoals.com
-    tls: true
-    udp: true
-    uuid: aa54d9f0-35aa-430a-a64d-d406022a9b8c
-  - name: Португалия
-    type: vless
-    server: pt-n1.gsupport.support
-    port: 443
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    network: tcp
-    reality-opts:
-      public-key: trN5x0amt2YuVzF2vZnK294YBAuh_zl5QkZjPyWz-TI
-      short-id: 8718c58d3d51db59
-    servername: pt3.spidermanshopping.com
-    tls: true
-    udp: true
-    uuid: 958e4608-6994-44df-975f-221ad2d0b132
-  - name: Турция 2
-    type: vless
-    server: tr-n1.gsupport.support
-    port: 443
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    network: tcp
-    reality-opts:
-      public-key: jIq_COD-tIXTvgDn-TslFGtB_a8HVgUOOIlUByv8fkg
-      short-id: 8718c58d3d51db59
-    servername: pl3.greenzone12.com
-    tls: true
-    udp: true
-    uuid: aa54d9f0-35aa-430a-a64d-d406022a9b8c
   - name: 🇨🇳 fallback 2
     type: vless
     server: rumost.puflino.com
@@ -1237,20 +1212,6 @@ proxies:
     tls: true
     udp: true
     uuid: 9afb299b-c553-4013-b506-dc215c130b15
-  - name: Португалия 2
-    type: vless
-    server: pt-n1.gsupport.support
-    port: 443
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    network: tcp
-    reality-opts:
-      public-key: trN5x0amt2YuVzF2vZnK294YBAuh_zl5QkZjPyWz-TI
-      short-id: 8718c58d3d51db59
-    servername: pt1.freehiliters.com
-    tls: true
-    udp: true
-    uuid: aa54d9f0-35aa-430a-a64d-d406022a9b8c
   - name: США
     type: vless
     server: us-n1.wolffast.net
@@ -1265,20 +1226,6 @@ proxies:
     tls: true
     udp: true
     uuid: 958e4608-6994-44df-975f-221ad2d0b132
-  - name: Египет 2
-    type: vless
-    server: eg.gsupport.support
-    port: 1443
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    network: tcp
-    reality-opts:
-      public-key: jIq_COD-tIXTvgDn-TslFGtB_a8HVgUOOIlUByv8fkg
-      short-id: 8718c58d3d51db59
-    servername: pl1.findreplayfoals.com
-    tls: true
-    udp: true
-    uuid: aa54d9f0-35aa-430a-a64d-d406022a9b8c
   - name: Германия 2
     type: vless
     server: germany4.banovano.space
@@ -1322,20 +1269,6 @@ proxies:
     tls: true
     udp: true
     uuid: aa54d9f0-35aa-430a-a64d-d406022a9b8c
-  - name: Белые списки | 2
-    type: vless
-    server: 95.163.232.57
-    port: 5443
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    network: tcp
-    reality-opts:
-      public-key: X8xcJHpXNQAs5jFbU_2WTQ5DzU3YdYh1tAHhsMc-lgY
-      short-id: 28237fabf9f09fc6
-    servername: verysweet.golubika.cloud
-    tls: true
-    udp: true
-    uuid: a8cd8251-92d2-4432-9ade-42566b1729da
   - name: 🇫🇷 o4_France_Cascade
     type: vless
     server: ruh.golubika.cloud
@@ -1422,78 +1355,6 @@ proxies:
     tls: true
     udp: true
     uuid: 3cb462d6-ba85-49f2-bb80-0899a5e0391b
-  - name: Белый список 23a
-    type: vless
-    server: 5.188.115.20
-    port: 8443
-    client-fingerprint: firefox
-    grpc-opts:
-      grpc-service-name: grpc
-    network: grpc
-    reality-opts:
-      public-key: WV58fGQd270mAtuAYhep9LXoVKTI0kiF4rCRaXAumWc
-      short-id: 16ee3a5f0387c553
-    servername: i0.photo.2gis.com
-    tls: true
-    udp: true
-    uuid: 2ef168f7-77f7-4cb7-9b4e-fa777b4c5d6a
-  - name: Авто выбор 2
-    type: vless
-    server: auto.gsupport.support
-    port: 443
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    network: tcp
-    reality-opts:
-      public-key: hyOYRfDSIYyqALQt3N2H0RjK8gbV1JvPTkNACC4PJF8
-      short-id: 8718c58d3d51db59
-    servername: en2.spidermanshopping.com
-    tls: true
-    udp: true
-    uuid: 958e4608-6994-44df-975f-221ad2d0b132
-  - name: Франция (Gemini, Торренты) 2
-    type: vless
-    server: fr-m1.gsupport.support
-    port: 443
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    network: tcp
-    reality-opts:
-      public-key: jIq_COD-tIXTvgDn-TslFGtB_a8HVgUOOIlUByv8fkg
-      short-id: 8718c58d3d51db59
-    servername: fr2.spidermanshopping.com
-    tls: true
-    udp: true
-    uuid: aa54d9f0-35aa-430a-a64d-d406022a9b8c
-  - name: Польша 3
-    type: vless
-    server: pl-o1.gsupport.support
-    port: 443
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    network: tcp
-    reality-opts:
-      public-key: jIq_COD-tIXTvgDn-TslFGtB_a8HVgUOOIlUByv8fkg
-      short-id: 8718c58d3d51db59
-    servername: pl2.freehiliters.com
-    tls: true
-    udp: true
-    uuid: aa54d9f0-35aa-430a-a64d-d406022a9b8c
-  - name: Белый список 21a
-    type: vless
-    server: 5.188.114.226
-    port: 8443
-    client-fingerprint: firefox
-    grpc-opts:
-      grpc-service-name: grpc
-    network: grpc
-    reality-opts:
-      public-key: WV58fGQd270mAtuAYhep9LXoVKTI0kiF4rCRaXAumWc
-      short-id: 16ee3a5f0387c553
-    servername: i0.photo.2gis.com
-    tls: true
-    udp: true
-    uuid: 2ef168f7-77f7-4cb7-9b4e-fa777b4c5d6a
   - name: Казахстан 2
     type: vless
     server: kzmain.gru1.cloud
@@ -1523,36 +1384,6 @@ proxies:
         hMaxRequestTimes: 0
         hMaxReusableSecs: 1800-3000
         maxConnections: 2
-  - name: Белый список 21b
-    type: vless
-    server: 5.188.114.226
-    port: 8443
-    client-fingerprint: firefox
-    grpc-opts:
-      grpc-service-name: grpc
-    network: grpc
-    reality-opts:
-      public-key: WV58fGQd270mAtuAYhep9LXoVKTI0kiF4rCRaXAumWc
-      short-id: 16ee3a5f0387c553
-    servername: max.ru
-    tls: true
-    udp: true
-    uuid: 2ef168f7-77f7-4cb7-9b4e-fa777b4c5d6a
-  - name: Белый список 24b
-    type: vless
-    server: 31.129.42.97
-    port: 8443
-    client-fingerprint: firefox
-    grpc-opts:
-      grpc-service-name: grpc
-    network: grpc
-    reality-opts:
-      public-key: WV58fGQd270mAtuAYhep9LXoVKTI0kiF4rCRaXAumWc
-      short-id: 16ee3a5f0387c553
-    servername: max.ru
-    tls: true
-    udp: true
-    uuid: 2ef168f7-77f7-4cb7-9b4e-fa777b4c5d6a
   - name: proxy 9
     type: vless
     server: jp.puflino.com
@@ -1567,20 +1398,6 @@ proxies:
     tls: true
     udp: true
     uuid: 3cb462d6-ba85-49f2-bb80-0899a5e0391b
-  - name: Белый список 32b
-    type: vless
-    server: 51.250.119.97
-    port: 8443
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    network: tcp
-    reality-opts:
-      public-key: JxwG7rAbNCd_C82p9K69AZDWh51fri2nm3wLHHrfyiw
-      short-id: 7755e972daf8eec8
-    servername: max.ru
-    tls: true
-    udp: true
-    uuid: 2ef168f7-77f7-4cb7-9b4e-fa777b4c5d6a
   - name: Япония
     type: vless
     server: jp.gsupport.support
@@ -1605,20 +1422,6 @@ proxies:
     tls: true
     udp: true
     uuid: 7daed536-c1c8-497f-a4d5-3865dc3e08be
-  - name: Чехия 2
-    type: vless
-    server: cz-n1.gsupport.support
-    port: 4443
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    network: tcp
-    reality-opts:
-      public-key: hyOYRfDSIYyqALQt3N2H0RjK8gbV1JvPTkNACC4PJF8
-      short-id: 8718c58d3d51db59
-    servername: pr3.spidermanshopping.com
-    tls: true
-    udp: true
-    uuid: aa54d9f0-35aa-430a-a64d-d406022a9b8c
   - name: 🇨🇳 fallback 4
     type: vless
     server: rumost.puflino.com
@@ -1633,20 +1436,6 @@ proxies:
     tls: true
     udp: true
     uuid: 3cb462d6-ba85-49f2-bb80-0899a5e0391b
-  - name: Антарктида
-    type: vless
-    server: an.gsupport.support
-    port: 443
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    network: tcp
-    reality-opts:
-      public-key: jIq_COD-tIXTvgDn-TslFGtB_a8HVgUOOIlUByv8fkg
-      short-id: 8718c58d3d51db59
-    servername: pl2.greenzone12.com
-    tls: true
-    udp: true
-    uuid: aa54d9f0-35aa-430a-a64d-d406022a9b8c
   - name: Япония 2
     type: vless
     server: jp.gsupport.support
@@ -1661,34 +1450,6 @@ proxies:
     tls: true
     udp: true
     uuid: aa54d9f0-35aa-430a-a64d-d406022a9b8c
-  - name: Нидерланды 2
-    type: vless
-    server: nl-n1.gsupport.support
-    port: 443
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    network: tcp
-    reality-opts:
-      public-key: jIq_COD-tIXTvgDn-TslFGtB_a8HVgUOOIlUByv8fkg
-      short-id: 8718c58d3d51db59
-    servername: nl2.findreplayfoals.com
-    tls: true
-    udp: true
-    uuid: aa54d9f0-35aa-430a-a64d-d406022a9b8c
-  - name: ОАЭ 2
-    type: vless
-    server: uae.gsupport.support
-    port: 4443
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    network: tcp
-    reality-opts:
-      public-key: jIq_COD-tIXTvgDn-TslFGtB_a8HVgUOOIlUByv8fkg
-      short-id: 8718c58d3d51db59
-    servername: pl2.magazinnarubeva.ru
-    tls: true
-    udp: true
-    uuid: 958e4608-6994-44df-975f-221ad2d0b132
   - name: 🇨🇳 fallback 5
     type: vless
     server: rumost.puflino.com
@@ -1703,20 +1464,6 @@ proxies:
     tls: true
     udp: true
     uuid: 3cb462d6-ba85-49f2-bb80-0899a5e0391b
-  - name: Швейцария (Gemini)
-    type: vless
-    server: si-n1.gsupport.support
-    port: 443
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    network: tcp
-    reality-opts:
-      public-key: hyOYRfDSIYyqALQt3N2H0RjK8gbV1JvPTkNACC4PJF8
-      short-id: 8718c58d3d51db59
-    servername: si2.findreplayfoals.com
-    tls: true
-    udp: true
-    uuid: aa54d9f0-35aa-430a-a64d-d406022a9b8c
   - name: США 3
     type: vless
     server: poland3.banovano.space
@@ -1731,20 +1478,6 @@ proxies:
     tls: true
     udp: true
     uuid: 497922d3-aa63-4f45-837e-90e5a16622d6
-  - name: Антарктида 2
-    type: vless
-    server: an.gsupport.support
-    port: 443
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    network: tcp
-    reality-opts:
-      public-key: jIq_COD-tIXTvgDn-TslFGtB_a8HVgUOOIlUByv8fkg
-      short-id: 8718c58d3d51db59
-    servername: pl1.wolffast.net
-    tls: true
-    udp: true
-    uuid: 958e4608-6994-44df-975f-221ad2d0b132
   - name: 🇷🇺 bridge-russia 2
     type: vless
     server: 66.90.92.93
@@ -1841,7 +1574,7 @@ proxies:
     uuid: 7daed536-c1c8-497f-a4d5-3865dc3e08be
     xhttp-opts:
       mode: stream-one
-  - name: Нидерланды 3
+  - name: Нидерланды 2
     type: vless
     server: menzyla.ru
     port: 443
@@ -1882,20 +1615,6 @@ proxies:
     tls: true
     udp: true
     uuid: a8cd8251-92d2-4432-9ade-42566b1729da
-  - name: Австрия (Gemini)
-    type: vless
-    server: au-n1.gsupport.support
-    port: 443
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    network: tcp
-    reality-opts:
-      public-key: hyOYRfDSIYyqALQt3N2H0RjK8gbV1JvPTkNACC4PJF8
-      short-id: 8718c58d3d51db59
-    servername: au2.magazinnarubeva.ru
-    tls: true
-    udp: true
-    uuid: aa54d9f0-35aa-430a-a64d-d406022a9b8c
   - name: Россия
     type: vless
     server: 89.208.208.71
@@ -1907,72 +1626,6 @@ proxies:
       public-key: trN5x0amt2YuVzF2vZnK294YBAuh_zl5QkZjPyWz-TI
       short-id: 8718c58d3d51db59
     servername: ru3.spidermanshopping.com
-    tls: true
-    udp: true
-    uuid: aa54d9f0-35aa-430a-a64d-d406022a9b8c
-  - name: Австрия 2
-    type: trojan
-    server: au-n1.gsupport.support
-    port: 1300
-    alpn:
-      - h2
-      - http/1.1
-    password: hxeAy4FnSKdrnvHQSroCeGAqvBv9t9FP
-    sni: au1.magazinnarubeva.ru
-    udp: true
-  - name: Польша (Резерв)
-    type: vless
-    server: pl-n1.gsupport.support
-    port: 443
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    network: tcp
-    reality-opts:
-      public-key: jIq_COD-tIXTvgDn-TslFGtB_a8HVgUOOIlUByv8fkg
-      short-id: 8718c58d3d51db59
-    servername: pl2.spidermanshopping.com
-    tls: true
-    udp: true
-    uuid: aa54d9f0-35aa-430a-a64d-d406022a9b8c
-  - name: Кипр
-    type: vless
-    server: cr.gsupport.support
-    port: 3443
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    network: tcp
-    reality-opts:
-      public-key: jIq_COD-tIXTvgDn-TslFGtB_a8HVgUOOIlUByv8fkg
-      short-id: 8718c58d3d51db59
-    servername: pl3.greenzone12.com
-    tls: true
-    udp: true
-    uuid: aa54d9f0-35aa-430a-a64d-d406022a9b8c
-  - name: Испания (YouTube без рекламы)
-    type: vless
-    server: sp-n1.gsupport.support
-    port: 443
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    network: tcp
-    reality-opts:
-      public-key: hyOYRfDSIYyqALQt3N2H0RjK8gbV1JvPTkNACC4PJF8
-      short-id: 8718c58d3d51db59
-    servername: video.g2853af.lat
-    tls: true
-    udp: true
-    uuid: aa54d9f0-35aa-430a-a64d-d406022a9b8c
-  - name: Армения
-    type: vless
-    server: am.gsupport.support
-    port: 4443
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    network: tcp
-    reality-opts:
-      public-key: jIq_COD-tIXTvgDn-TslFGtB_a8HVgUOOIlUByv8fkg
-      short-id: 8718c58d3d51db59
-    servername: pl3.findreplayfoals.com
     tls: true
     udp: true
     uuid: aa54d9f0-35aa-430a-a64d-d406022a9b8c
@@ -1990,76 +1643,6 @@ proxies:
     tls: true
     udp: true
     uuid: aa54d9f0-35aa-430a-a64d-d406022a9b8c
-  - name: Исландия
-    type: vless
-    server: ie.gsupport.support
-    port: 1443
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    network: tcp
-    reality-opts:
-      public-key: jIq_COD-tIXTvgDn-TslFGtB_a8HVgUOOIlUByv8fkg
-      short-id: 8718c58d3d51db59
-    servername: pl2.findreplayfoals.com
-    tls: true
-    udp: true
-    uuid: aa54d9f0-35aa-430a-a64d-d406022a9b8c
-  - name: Виргинские острова
-    type: vless
-    server: vr.gsupport.support
-    port: 443
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    network: tcp
-    reality-opts:
-      public-key: jIq_COD-tIXTvgDn-TslFGtB_a8HVgUOOIlUByv8fkg
-      short-id: 8718c58d3d51db59
-    servername: pl1.spidermanshopping.com
-    tls: true
-    udp: true
-    uuid: aa54d9f0-35aa-430a-a64d-d406022a9b8c
-  - name: Украина
-    type: vless
-    server: ua.gsupport.support
-    port: 2443
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    network: tcp
-    reality-opts:
-      public-key: jIq_COD-tIXTvgDn-TslFGtB_a8HVgUOOIlUByv8fkg
-      short-id: 8718c58d3d51db59
-    servername: pl3.findreplayfoals.com
-    tls: true
-    udp: true
-    uuid: aa54d9f0-35aa-430a-a64d-d406022a9b8c
-  - name: Таджикистан
-    type: vless
-    server: tj.gsupport.support
-    port: 5443
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    network: tcp
-    reality-opts:
-      public-key: jIq_COD-tIXTvgDn-TslFGtB_a8HVgUOOIlUByv8fkg
-      short-id: 8718c58d3d51db59
-    servername: pl2.promocodiums.com
-    tls: true
-    udp: true
-    uuid: aa54d9f0-35aa-430a-a64d-d406022a9b8c
-  - name: Польша (Резерв) 2
-    type: vless
-    server: pl-n1.gsupport.support
-    port: 443
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    network: tcp
-    reality-opts:
-      public-key: jIq_COD-tIXTvgDn-TslFGtB_a8HVgUOOIlUByv8fkg
-      short-id: 8718c58d3d51db59
-    servername: pl3.spidermanshopping.com
-    tls: true
-    udp: true
-    uuid: 958e4608-6994-44df-975f-221ad2d0b132
   - name: Россия 3
     type: vless
     server: 89.208.208.71
@@ -2074,146 +1657,6 @@ proxies:
     tls: true
     udp: true
     uuid: 958e4608-6994-44df-975f-221ad2d0b132
-  - name: Нидерланды 4
-    type: vless
-    server: nl-n1.gsupport.support
-    port: 443
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    network: tcp
-    reality-opts:
-      public-key: jIq_COD-tIXTvgDn-TslFGtB_a8HVgUOOIlUByv8fkg
-      short-id: 8718c58d3d51db59
-    servername: nl2.wolffast.net
-    tls: true
-    udp: true
-    uuid: 958e4608-6994-44df-975f-221ad2d0b132
-  - name: Австрия (Gemini) 2
-    type: vless
-    server: au-n1.gsupport.support
-    port: 443
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    network: tcp
-    reality-opts:
-      public-key: hyOYRfDSIYyqALQt3N2H0RjK8gbV1JvPTkNACC4PJF8
-      short-id: 8718c58d3d51db59
-    servername: au1.wolffast.net
-    tls: true
-    udp: true
-    uuid: 958e4608-6994-44df-975f-221ad2d0b132
-  - name: Польша 4
-    type: vless
-    server: pl-o1.gsupport.support
-    port: 443
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    network: tcp
-    reality-opts:
-      public-key: jIq_COD-tIXTvgDn-TslFGtB_a8HVgUOOIlUByv8fkg
-      short-id: 8718c58d3d51db59
-    servername: pl2.greenzone12.com
-    tls: true
-    udp: true
-    uuid: 958e4608-6994-44df-975f-221ad2d0b132
-  - name: Германия 3
-    type: vless
-    server: de-n3.gsupport.support
-    port: 443
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    network: tcp
-    reality-opts:
-      public-key: jIq_COD-tIXTvgDn-TslFGtB_a8HVgUOOIlUByv8fkg
-      short-id: 8718c58d3d51db59
-    servername: de3.magazinnarubeva.ru
-    tls: true
-    udp: true
-    uuid: 958e4608-6994-44df-975f-221ad2d0b132
-  - name: Швейцария (Gemini) 2
-    type: vless
-    server: si-n1.gsupport.support
-    port: 443
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    network: tcp
-    reality-opts:
-      public-key: hyOYRfDSIYyqALQt3N2H0RjK8gbV1JvPTkNACC4PJF8
-      short-id: 8718c58d3d51db59
-    servername: si1.magazinnarubeva.ru
-    tls: true
-    udp: true
-    uuid: 958e4608-6994-44df-975f-221ad2d0b132
-  - name: Швеция (YouTube без рекламы) 2
-    type: vless
-    server: sw-n1.gsupport.support
-    port: 443
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    network: tcp
-    reality-opts:
-      public-key: hyOYRfDSIYyqALQt3N2H0RjK8gbV1JvPTkNACC4PJF8
-      short-id: 8718c58d3d51db59
-    servername: sw2.spidermanshopping.com
-    tls: true
-    udp: true
-    uuid: 958e4608-6994-44df-975f-221ad2d0b132
-  - name: Литва (YouTube без рекламы) 2
-    type: vless
-    server: li-n1.gsupport.support
-    port: 443
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    network: tcp
-    reality-opts:
-      public-key: hyOYRfDSIYyqALQt3N2H0RjK8gbV1JvPTkNACC4PJF8
-      short-id: 8718c58d3d51db59
-    servername: li2.wolffast.net
-    tls: true
-    udp: true
-    uuid: 958e4608-6994-44df-975f-221ad2d0b132
-  - name: Кипр 2
-    type: vless
-    server: cr.gsupport.support
-    port: 3443
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    network: tcp
-    reality-opts:
-      public-key: jIq_COD-tIXTvgDn-TslFGtB_a8HVgUOOIlUByv8fkg
-      short-id: 8718c58d3d51db59
-    servername: pl2.spidermanshopping.com
-    tls: true
-    udp: true
-    uuid: 958e4608-6994-44df-975f-221ad2d0b132
-  - name: Испания (YouTube без рекламы) 2
-    type: vless
-    server: sp-n1.gsupport.support
-    port: 443
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    network: tcp
-    reality-opts:
-      public-key: hyOYRfDSIYyqALQt3N2H0RjK8gbV1JvPTkNACC4PJF8
-      short-id: 8718c58d3d51db59
-    servername: video.g2853af.lat
-    tls: true
-    udp: true
-    uuid: 958e4608-6994-44df-975f-221ad2d0b132
-  - name: Армения 2
-    type: vless
-    server: am.gsupport.support
-    port: 4443
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    network: tcp
-    reality-opts:
-      public-key: jIq_COD-tIXTvgDn-TslFGtB_a8HVgUOOIlUByv8fkg
-      short-id: 8718c58d3d51db59
-    servername: pl1.spidermanshopping.com
-    tls: true
-    udp: true
-    uuid: 958e4608-6994-44df-975f-221ad2d0b132
   - name: Россия 2 2
     type: vless
     server: ru1.gru1.cloud
@@ -2225,62 +1668,6 @@ proxies:
       public-key: JxwG7rAbNCd_C82p9K69AZDWh51fri2nm3wLHHrfyiw
       short-id: 7755e972daf8eec8
     servername: apple.com
-    tls: true
-    udp: true
-    uuid: 958e4608-6994-44df-975f-221ad2d0b132
-  - name: Исландия 2
-    type: vless
-    server: ie.gsupport.support
-    port: 1443
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    network: tcp
-    reality-opts:
-      public-key: jIq_COD-tIXTvgDn-TslFGtB_a8HVgUOOIlUByv8fkg
-      short-id: 8718c58d3d51db59
-    servername: pl1.spidermanshopping.com
-    tls: true
-    udp: true
-    uuid: 958e4608-6994-44df-975f-221ad2d0b132
-  - name: Виргинские острова 2
-    type: vless
-    server: vr.gsupport.support
-    port: 443
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    network: tcp
-    reality-opts:
-      public-key: jIq_COD-tIXTvgDn-TslFGtB_a8HVgUOOIlUByv8fkg
-      short-id: 8718c58d3d51db59
-    servername: pl1.magazinnarubeva.ru
-    tls: true
-    udp: true
-    uuid: 958e4608-6994-44df-975f-221ad2d0b132
-  - name: Украина 2
-    type: vless
-    server: ua.gsupport.support
-    port: 2443
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    network: tcp
-    reality-opts:
-      public-key: jIq_COD-tIXTvgDn-TslFGtB_a8HVgUOOIlUByv8fkg
-      short-id: 8718c58d3d51db59
-    servername: pl1.spidermanshopping.com
-    tls: true
-    udp: true
-    uuid: 958e4608-6994-44df-975f-221ad2d0b132
-  - name: Таджикистан 2
-    type: vless
-    server: tj.gsupport.support
-    port: 5443
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    network: tcp
-    reality-opts:
-      public-key: jIq_COD-tIXTvgDn-TslFGtB_a8HVgUOOIlUByv8fkg
-      short-id: 8718c58d3d51db59
-    servername: pl2.promocodiums.com
     tls: true
     udp: true
     uuid: 958e4608-6994-44df-975f-221ad2d0b132
