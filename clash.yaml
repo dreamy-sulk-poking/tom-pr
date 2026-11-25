@@ -91,6 +91,100 @@ proxy-groups:
   - name: Ключики ;3
     type: select
     proxies:
+      - LTE proxy-0
+      - LTE proxy-1
+      - LTE proxy-2
+      - LTE proxy-3
+      - LTE proxy-4
+      - LTE proxy-5
+      - LTE proxy-6
+      - LTE proxy-7
+      - LTE proxy-8
+      - LTE proxy-9
+      - LTE proxy-10
+      - LTE proxy-11
+      - LTE proxy-12
+      - LTE proxy-13
+      - LTE proxy-14
+      - LTE proxy-15
+      - LTE proxy-16
+      - LTE proxy-17
+      - LTE proxy-18
+      - LTE proxy-19
+      - LTE proxy-20
+      - LTE proxy-21
+      - LTE proxy-22
+      - LTE proxy-23
+      - LTE proxy-24
+      - LTE proxy-25
+      - LTE proxy-26
+      - LTE proxy-27
+      - LTE proxy-28
+      - LTE proxy-29
+      - LTE proxy-30
+      - LTE proxy-31
+      - LTE proxy-32
+      - LTE proxy-33
+      - LTE proxy-34
+      - LTE proxy-35
+      - LTE proxy-36
+      - LTE proxy-37
+      - LTE proxy-38
+      - LTE proxy-39
+      - LTE proxy-40
+      - LTE proxy-41
+      - LTE proxy-42
+      - LTE proxy-43
+      - LTE proxy-44
+      - LTE proxy-45
+      - LTE proxy-46
+      - LTE proxy-47
+      - LTE proxy-48
+      - LTE proxy-49
+      - LTE proxy-50
+      - LTE proxy-51
+      - LTE proxy-52
+      - LTE proxy-53
+      - LTE proxy-54
+      - LTE proxy-55
+      - LTE proxy-56
+      - LTE proxy-57
+      - LTE proxy-58
+      - LTE proxy-59
+      - ДЛЯ МОБИЛЬНОГО ИНТЕРНЕТА №2
+      - ДЛЯ МОБИЛЬНОГО ИНТЕРНЕТА №1
+      - ДЛЯ МОБИЛЬНОГО ИНТЕРНЕТА №3
+      - ДЛЯ МОБИЛЬНОГО ИНТЕРНЕТА №4
+      - ДЛЯ МОБИЛЬНОГО ИНТЕРНЕТА №5
+      - ДЛЯ МОБИЛЬНОГО ИНТЕРНЕТА №6
+      - ДЛЯ МОБИЛЬНОГО ИНТЕРНЕТА №9
+      - ДЛЯ МОБИЛЬНОГО ИНТЕРНЕТА №10
+      - ДЛЯ МОБИЛЬНОГО ИНТЕРНЕТА №11
+      - ДЛЯ МОБИЛЬНОГО ИНТЕРНЕТА №12
+      - ДЛЯ МОБИЛЬНОГО ИНТЕРНЕТА №13
+      - ДЛЯ МОБИЛЬНОГО ИНТЕРНЕТА №14
+      - ДЛЯ МОБИЛЬНОГО ИНТЕРНЕТА №15
+      - ДЛЯ МОБИЛЬНОГО ИНТЕРНЕТА №16
+      - ДЛЯ МОБИЛЬНОГО ИНТЕРНЕТА №19
+      - ДЛЯ МОБИЛЬНОГО ИНТЕРНЕТА №20
+      - ДЛЯ МОБИЛЬНОГО ИНТЕРНЕТА №21
+      - ДЛЯ МОБИЛЬНОГО ИНТЕРНЕТА №22
+      - ДЛЯ МОБИЛЬНОГО ИНТЕРНЕТА №23
+      - LTE proxy-79
+      - LTE proxy-80
+      - LTE proxy-81
+      - LTE proxy-82
+      - LTE proxy-83
+      - Латвия
+      - Финляндия
+      - Польша
+      - Германия 2
+      - 'Германия #2'
+      - Швеция
+      - Финляндия (резерв)
+      - США
+      - Эстония
+      - Нидерланды
       - Румыния N1 (Торренты)
       - Белый список 33a
       - Белый список 33b
@@ -138,32 +232,28 @@ proxy-groups:
       - 'При ограничениях #6'
       - proxy
       - Россия-2
-      - Швеция
-      - Финляндия (резерв)
-      - Финляндия
-      - Эстония
-      - Латвия
+      - Финляндия 2
+      - Эстония 2
       - 🇩🇪 o1_Germany
       - proxy 2
       - proxy 3
-      - Нидерланды
+      - Нидерланды 2
       - 🇸🇪 o2_Sweden_Hysteria_2
       - 🇨🇳 fallback
       - proxy 4
       - proxy 5
-      - 'Германия #2'
+      - 'Германия #2 2'
       - o7_Sw
       - proxy 6
-      - Польша
-      - Финляндия 2
+      - Польша 2
+      - Финляндия 3
       - proxy 7
       - o5_Netherland
       - 🇨🇳 fallback 2
-      - Польша 2
-      - США
-      - Германия 2
-      - Швеция 2
+      - Польша 3
       - США 2
+      - Швеция 2
+      - США 3
       - 🇫🇷 o4_France_Cascade
       - proxy 8
       - Казахстан
@@ -176,7 +266,7 @@ proxy-groups:
       - 🇨🇳 fallback 4
       - Япония 2
       - 🇨🇳 fallback 5
-      - США 3
+      - США 4
       - 🇷🇺 bridge-russia 2
       - proxy 10
       - proxy 11
@@ -184,7 +274,7 @@ proxy-groups:
       - Финляндия-NEW
       - Авто | Самый быстрый
       - proxy 13
-      - Нидерланды 2
+      - Нидерланды 3
       - Казахстан 3
       - 🇸🇪 o8_Sweden_2
       - Россия
@@ -249,6 +339,1284 @@ rules:
   - RULE-SET,whitelist-domains,DIRECT
   - MATCH,Ключики ;3
 proxies:
+  - name: LTE proxy-0
+    type: vless
+    server: lib-69ba1944.bnv.lol
+    port: 443
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+    reality-opts:
+      public-key: 8rdhihFgU72DVkhH6ROS9j2WyNc_spuiGXrT_YvNJ0M
+      short-id: f51bc11ebd9f2835
+    servername: contract.starsov.pro
+    tls: true
+    udp: true
+    uuid: d3d4e690-db61-4b84-8687-7c1ff79c89ff
+  - name: LTE proxy-1
+    type: vless
+    server: lib-e4662d58.bnv.lol
+    port: 443
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+    reality-opts:
+      public-key: 8rdhihFgU72DVkhH6ROS9j2WyNc_spuiGXrT_YvNJ0M
+      short-id: f51bc11ebd9f2835
+    servername: contract.starsov.pro
+    tls: true
+    udp: true
+    uuid: d3d4e690-db61-4b84-8687-7c1ff79c89ff
+  - name: LTE proxy-2
+    type: vless
+    server: lib-38ab28ee.bnv.lol
+    port: 443
+    client-fingerprint: firefox
+    network: ws
+    servername: devcdn.icu
+    tls: true
+    udp: true
+    uuid: b432a23a-acff-425c-bf69-70480cd6ed09
+    ws-opts:
+      path: /edge/chunk/b2265efffa29/
+  - name: LTE proxy-3
+    type: vless
+    server: lib-d256f80a.bnv.lol
+    port: 443
+    client-fingerprint: firefox
+    network: xhttp
+    servername: cdnpl.worldfly.io
+    tls: true
+    udp: true
+    uuid: b432a23a-acff-425c-bf69-70480cd6ed09
+    xhttp-opts:
+      host: cdnpl.worldfly.io
+      mode: packet-up
+      path: /api/v1/assets/
+  - name: LTE proxy-4
+    type: vless
+    server: lib-4f17cba5.bnv.lol
+    port: 2443
+    client-fingerprint: firefox
+    network: tcp
+    reality-opts:
+      public-key: 7TIFbbAHELNWG8-nmLxL-2CijeOQYsP1vK4CtFMUDHI
+      short-id: deadbeef
+    servername: www.lgcity.store
+    tls: true
+    udp: true
+    uuid: a6401081-cbe9-48c9-887b-e4cc11f6328a
+  - name: LTE proxy-5
+    type: vless
+    server: lib-d5ab67d0.bnv.lol
+    port: 443
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+    reality-opts:
+      public-key: xIKQBj2hC56m7ybt0JVWWeuxYtkVf9vxHNOLDOuLqVE
+      short-id: a11c5d3e82b04719
+    servername: community-13c.paruscamp.com
+    tls: true
+    udp: true
+    uuid: 6a609bc5-ce0b-4384-860a-a4ce7c5759a0
+  - name: LTE proxy-6
+    type: vless
+    server: lib-1669a773.bnv.lol
+    port: 12460
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+    reality-opts:
+      public-key: 6iY9vVjXFPDfNVhmDsV5IlC0NcaPpaba83dxDEmxVzo
+      short-id: 7d752340c0e7c473
+    servername: passport.yandex.ru
+    tls: true
+    udp: true
+    uuid: 6a609bc5-ce0b-4384-860a-a4ce7c5759a0
+  - name: LTE proxy-7
+    type: vless
+    server: lib-df0b44a3.bnv.lol
+    port: 10666
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+    reality-opts:
+      public-key: FRAR39JkMtmSLC1fsZxLehEittKBpdTlZqj0cf3k4Rc
+      short-id: d94d3f6d21961589
+    servername: passport.yandex.ru
+    tls: true
+    udp: true
+    uuid: 6a609bc5-ce0b-4384-860a-a4ce7c5759a0
+  - name: LTE proxy-8
+    type: vless
+    server: lib-ae2dfbf6.bnv.lol
+    port: 443
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+    reality-opts:
+      public-key: rJ-fFNYXh7WW9LuYe1N71fh7nAEe5i09Pi5ZDSDlH1s
+      short-id: 4951a2313524dd8f
+    servername: ruru.formulacloud.top
+    tls: true
+    udp: true
+    uuid: 66c76bb5-a87c-4bc3-a6d0-403206e2f139
+  - name: LTE proxy-9
+    type: vless
+    server: lib-1b8457b5.bnv.lol
+    port: 52831
+    client-fingerprint: firefox
+    network: xhttp
+    servername: origin.mtrxnet.click
+    tls: true
+    udp: true
+    uuid: c3d7240b-27ae-4eda-b850-d47f5a603da9
+    xhttp-opts:
+      host: origin.mtrxnet.click
+      mode: stream-up
+      path: /api/articles/live
+  - name: LTE proxy-10
+    type: vless
+    server: lib-802bb6cc.bnv.lol
+    port: 443
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+    servername: edge-de5.mystatic-cdn.ru
+    tls: true
+    udp: true
+    uuid: 1f628aef-1a6f-4e22-9b1d-ab3cd9bc6770
+  - name: LTE proxy-11
+    type: vless
+    server: lib-6fab718e.bnv.lol
+    port: 443
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+    servername: edge-de5.mystatic-cdn.ru
+    tls: true
+    udp: true
+    uuid: 1f628aef-1a6f-4e22-9b1d-ab3cd9bc6770
+  - name: LTE proxy-12
+    type: vless
+    server: lib-06f91549.bnv.lol
+    port: 2443
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+    reality-opts:
+      public-key: gMkxxxFo7F0gLBe93tRyfDKFSH0YlfTFPd7X-fHfJ1s
+      short-id: abcded1950c35dcc
+    servername: de2.hys.braidx.tech
+    tls: true
+    udp: true
+    uuid: cb3427be-5ab9-4b95-8b17-032843034f34
+  - name: LTE proxy-13
+    type: vless
+    server: lib-b3469b50.bnv.lol
+    port: 443
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+    reality-opts:
+      public-key: _3mkK8SY6YVqws73SUVPKL77tzxDVNUt4ag9J9ec-D0
+      short-id: d05a120d3506d2cc
+    servername: 144.hexdey.com
+    tls: true
+    udp: true
+    uuid: a71d6c6d-c95e-4ec1-a892-22e21733bf09
+  - name: LTE proxy-14
+    type: vless
+    server: lib-34f78bb7.bnv.lol
+    port: 2053
+    client-fingerprint: firefox
+    network: xhttp
+    servername: polarladder.com
+    tls: true
+    udp: true
+    uuid: 37af0181-5598-4aad-a040-d926bcb65757
+    xhttp-opts:
+      host: polarladder.com
+      mode: auto
+      path: /api/v1/upload
+  - name: LTE proxy-15
+    type: vless
+    server: lib-d37d73b3.bnv.lol
+    port: 443
+    client-fingerprint: firefox
+    network: xhttp
+    servername: blog.cs-on.ru
+    tls: true
+    udp: true
+    uuid: ef1da56e-8117-42b4-bcd8-9094ebbdf985
+    xhttp-opts:
+      host: locationfree.icu
+      mode: packet-up
+      path: /static/report/4e04b7155d78/
+  - name: LTE proxy-16
+    type: vless
+    server: lib-f0688f66.bnv.lol
+    port: 443
+    client-fingerprint: firefox
+    network: ws
+    servername: smartcdn.top
+    tls: true
+    udp: true
+    uuid: 37af0181-5598-4aad-a040-d926bcb65757
+    ws-opts:
+      path: /useraction/collect/8a64b355ef0c/
+  - name: LTE proxy-17
+    type: vless
+    server: lib-2d1fc432.bnv.lol
+    port: 443
+    client-fingerprint: firefox
+    network: xhttp
+    servername: generating.b2ai.top
+    tls: true
+    udp: true
+    uuid: 8b911bca-7715-4adb-a755-f628847a0065
+    xhttp-opts:
+      host: 188.225.46.6
+      mode: auto
+      path: /api/v1/stream-3ca21ced73
+  - name: LTE proxy-18
+    type: vless
+    server: lib-79b03a17.bnv.lol
+    port: 443
+    client-fingerprint: firefox
+    network: xhttp
+    servername: generating.b2ai.top
+    tls: true
+    udp: true
+    uuid: 8b911bca-7715-4adb-a755-f628847a0065
+    xhttp-opts:
+      host: 188.225.36.19
+      mode: auto
+      path: /api/v1/stream-3ca21ced73
+  - name: LTE proxy-19
+    type: vless
+    server: lib-a733bf81.bnv.lol
+    port: 443
+    client-fingerprint: firefox
+    network: xhttp
+    servername: cdnok.b2ai.top
+    tls: true
+    udp: true
+    uuid: 8b911bca-7715-4adb-a755-f628847a0065
+    xhttp-opts:
+      host: cdnok.b2ai.top
+      mode: packet-up
+      path: /api/v1/telemetry/call/
+  - name: LTE proxy-20
+    type: vless
+    server: cdnpl.worldfly.io
+    port: 443
+    client-fingerprint: firefox
+    network: xhttp
+    servername: cdnpl.worldfly.io
+    tls: true
+    udp: true
+    uuid: b432a23a-acff-425c-bf69-70480cd6ed09
+    xhttp-opts:
+      host: cdnpl.worldfly.io
+      mode: packet-up
+      path: /api/v1/assets/
+  - name: LTE proxy-21
+    type: vless
+    server: devcdn.icu
+    port: 443
+    client-fingerprint: firefox
+    network: ws
+    servername: devcdn.icu
+    tls: true
+    udp: true
+    uuid: b432a23a-acff-425c-bf69-70480cd6ed09
+    ws-opts:
+      path: /edge/chunk/b2265efffa29/
+  - name: LTE proxy-22
+    type: vless
+    server: cdn.white.gigobingo.ru
+    port: 443
+    client-fingerprint: firefox
+    network: xhttp
+    servername: cdn.white.gigobingo.ru
+    tls: true
+    udp: true
+    uuid: 6f77cc80-ad58-4637-84d0-aba1c296ad2f
+    xhttp-opts:
+      host: cdn.white.gigobingo.ru
+      mode: packet-up
+      path: /api/v1/assets
+  - name: LTE proxy-23
+    type: vless
+    server: 147.45.98.78
+    port: 443
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+    reality-opts:
+      public-key: C8jwxMahtF-BpgtauR6I6dVXCc0X8VM9nbFxDQ3LzF0
+      short-id: b4
+    servername: www.gosuslugi.ru
+    tls: true
+    udp: true
+    uuid: 3b51157f-fa41-4092-b378-376b0e2d3edb
+  - name: LTE proxy-24
+    type: vless
+    server: 188.225.74.6
+    port: 443
+    client-fingerprint: firefox
+    network: tcp
+    reality-opts:
+      public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
+      short-id: db04ce8bdb8900f1
+    servername: 1.3.3.7
+    tls: true
+    udp: true
+    uuid: 3af3f8f0-569f-4dd3-be99-2ef4bfe7867c
+  - name: LTE proxy-25
+    type: vless
+    server: 185.134.203.106
+    port: 443
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+    reality-opts:
+      public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
+      short-id: db04ce8bdb8900f1
+    servername: 1.3.3.7
+    tls: true
+    udp: true
+    uuid: 3af3f8f0-569f-4dd3-be99-2ef4bfe7867c
+  - name: LTE proxy-26
+    type: vless
+    server: kumar.oblachniy.ink
+    port: 443
+    client-fingerprint: firefox
+    network: xhttp
+    servername: kumar.oblachniy.ink
+    tls: true
+    udp: true
+    uuid: b198fbd9-2930-4b06-97b8-182a2794d088
+    xhttp-opts:
+      host: kumar.oblachniy.ink
+      mode: packet-up
+      path: /api/library/track/
+  - name: LTE proxy-27
+    type: vless
+    server: x55cf8ug.devcdn.icu
+    port: 443
+    client-fingerprint: firefox
+    network: ws
+    servername: x55cf8ug.devcdn.icu
+    tls: true
+    udp: true
+    uuid: b432a23a-acff-425c-bf69-70480cd6ed09
+    ws-opts:
+      path: /edge/chunk/b2265efffa29/
+  - name: LTE proxy-28
+    type: vless
+    server: 188.72.112.1
+    port: 443
+    client-fingerprint: firefox
+    network: xhttp
+    servername: pl2-cdn.insidenet.ru
+    tls: true
+    udp: true
+    uuid: 67a31bdf-5846-409d-8b49-3d795e1a2a4f
+    xhttp-opts:
+      host: pl2-cdn.insidenet.ru
+      mode: packet-up
+      path: /api/v4/segments/
+  - name: LTE proxy-29
+    type: vless
+    server: ch3-cdn.insidenet.ru
+    port: 443
+    client-fingerprint: firefox
+    network: xhttp
+    servername: ch3-cdn.insidenet.ru
+    tls: true
+    udp: true
+    uuid: 67a31bdf-5846-409d-8b49-3d795e1a2a4f
+    xhttp-opts:
+      host: ch3-cdn.insidenet.ru
+      mode: packet-up
+      path: /api/v2/telemetry/
+  - name: LTE proxy-30
+    type: vless
+    server: dc.insidenet.ru
+    port: 443
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+    reality-opts:
+      public-key: faqmj_uQDJVghT-q2jHC11Gl8ZMI-QzmXpWny_08DCo
+      short-id: 844a8254f4d5ebbf
+    servername: dc.insidenet.ru
+    tls: true
+    udp: true
+    uuid: 67a31bdf-5846-409d-8b49-3d795e1a2a4f
+  - name: LTE proxy-31
+    type: vless
+    server: locationfree.icu
+    port: 443
+    client-fingerprint: firefox
+    network: ws
+    servername: account.hpam.ru
+    tls: true
+    udp: true
+    uuid: c78cc6f1-0154-49c9-b5ba-3ca18d7b977b
+    ws-opts:
+      path: /useraction/metrics/a01e0709c6bc/
+  - name: LTE proxy-32
+    type: vless
+    server: timeweb-2hmq5ehr3ievlnabv8l2.concept7.ru
+    port: 443
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+    reality-opts:
+      public-key: KEZ93Y9VgoirI18wIpcfS3z8I9GiaiFe-GKqGdEPMmg
+      short-id: 6b86b273ff34
+    servername: deepl.com
+    tls: true
+    udp: true
+    uuid: 48818046-00b5-4576-bbe8-d2971fe0f844
+  - name: LTE proxy-33
+    type: vless
+    server: assets2.pd-service.shop
+    port: 3099
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+    reality-opts:
+      public-key: R6XO56Bp8-HW5dW3oOu5WC-bYVBD9ed8KR_mx6oU6Ew
+      short-id: 5701ece7005006b8
+    servername: vimeo.com
+    tls: true
+    udp: true
+    uuid: cdfc923e-8d34-4b44-ac72-ab41ec560ba8
+  - name: LTE proxy-34
+    type: vless
+    server: 85.192.61.94
+    port: 443
+    client-fingerprint: firefox
+    network: xhttp
+    servername: origin5.pd-service.shop
+    tls: true
+    udp: true
+    uuid: cdfc923e-8d34-4b44-ac72-ab41ec560ba8
+    xhttp-opts:
+      host: origin4.pd-service.shop
+      mode: packet-up
+      path: /api-test-fi
+  - name: LTE proxy-35
+    type: vless
+    server: origin4.pd-service.shop
+    port: 443
+    client-fingerprint: firefox
+    network: xhttp
+    servername: origin4.pd-service.shop
+    tls: true
+    udp: true
+    uuid: cdfc923e-8d34-4b44-ac72-ab41ec560ba8
+    xhttp-opts:
+      host: origin4.pd-service.shop
+      mode: packet-up
+      path: /api-test-fi
+  - name: LTE proxy-36
+    type: vless
+    server: 188.72.112.1
+    port: 443
+    client-fingerprint: firefox
+    network: xhttp
+    servername: ycnl2.subs-sosavpn.ru
+    tls: true
+    udp: true
+    uuid: 4a3e1246-4ac0-4212-abac-a34008218f66
+    xhttp-opts:
+      host: ycnl2.subs-sosavpn.ru
+      mode: packet-up
+      path: /api/v4/media/session/poll.ts
+  - name: LTE proxy-37
+    type: vless
+    server: ycfl.subs-sosavpn.ru
+    port: 443
+    client-fingerprint: firefox
+    network: xhttp
+    servername: ycfl.subs-sosavpn.ru
+    tls: true
+    udp: true
+    uuid: 4a3e1246-4ac0-4212-abac-a34008218f66
+    xhttp-opts:
+      host: ycfl.subs-sosavpn.ru
+      mode: packet-up
+      path: /api/v4/media/session/poll.ts
+  - name: LTE proxy-38
+    type: vless
+    server: 109.248.239.172
+    port: 8443
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+    reality-opts:
+      public-key: DulhUFMYzxIsucjtPONJQMszzyi9V6bqQ9WI3GjGFAY
+      short-id: abc123
+    servername: ya.ru
+    tls: true
+    udp: true
+    uuid: 8f092ef0-a7e6-03e9-b989-836aebc00ff7
+  - name: LTE proxy-39
+    type: vless
+    server: 109.248.239.171
+    port: 8443
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+    reality-opts:
+      public-key: DulhUFMYzxIsucjtPONJQMszzyi9V6bqQ9WI3GjGFAY
+      short-id: abc123
+    servername: ya.ru
+    tls: true
+    udp: true
+    uuid: 8f092ef0-a7e6-03e9-b989-836aebc00ff7
+  - name: LTE proxy-40
+    type: vless
+    server: 161.104.89.164
+    port: 8443
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+    reality-opts:
+      public-key: DulhUFMYzxIsucjtPONJQMszzyi9V6bqQ9WI3GjGFAY
+      short-id: abc123
+    servername: ya.ru
+    tls: true
+    udp: true
+    uuid: 8f092ef0-a7e6-03e9-b989-836aebc00ff7
+  - name: LTE proxy-41
+    type: vless
+    server: wl2.g-late.com
+    port: 443
+    client-fingerprint: firefox
+    network: xhttp
+    servername: wl2.g-late.com
+    tls: true
+    udp: true
+    uuid: b1070a4d-ad4a-415d-b31a-8a4f6b93602e
+    xhttp-opts:
+      host: wl2.g-late.com
+      mode: packet-up
+      path: /api/v4/59ebf8
+  - name: LTE proxy-42
+    type: vless
+    server: 188.225.32.175
+    port: 443
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+    reality-opts:
+      public-key: 8rdhihFgU72DVkhH6ROS9j2WyNc_spuiGXrT_YvNJ0M
+      short-id: f51bc11ebd9f2835
+    servername: contract.starsov.pro
+    tls: true
+    udp: true
+    uuid: d3d4e690-db61-4b84-8687-7c1ff79c89ff
+  - name: LTE proxy-43
+    type: vless
+    server: 188.225.32.252
+    port: 443
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+    reality-opts:
+      public-key: 8rdhihFgU72DVkhH6ROS9j2WyNc_spuiGXrT_YvNJ0M
+      short-id: f51bc11ebd9f2835
+    servername: contract.starsov.pro
+    tls: true
+    udp: true
+    uuid: d3d4e690-db61-4b84-8687-7c1ff79c89ff
+  - name: LTE proxy-44
+    type: vless
+    server: mts.champmoney.ru
+    port: 2443
+    client-fingerprint: firefox
+    network: tcp
+    reality-opts:
+      public-key: 7TIFbbAHELNWG8-nmLxL-2CijeOQYsP1vK4CtFMUDHI
+      short-id: deadbeef
+    servername: www.lgcity.store
+    tls: true
+    udp: true
+    uuid: a6401081-cbe9-48c9-887b-e4cc11f6328a
+  - name: LTE proxy-45
+    type: vless
+    server: community-13c.paruscamp.com
+    port: 443
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+    reality-opts:
+      public-key: xIKQBj2hC56m7ybt0JVWWeuxYtkVf9vxHNOLDOuLqVE
+      short-id: a11c5d3e82b04719
+    servername: community-13c.paruscamp.com
+    tls: true
+    udp: true
+    uuid: 6a609bc5-ce0b-4384-860a-a4ce7c5759a0
+  - name: LTE proxy-46
+    type: vless
+    server: supra-kivy.xrent.cloud
+    port: 12460
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+    reality-opts:
+      public-key: 6iY9vVjXFPDfNVhmDsV5IlC0NcaPpaba83dxDEmxVzo
+      short-id: 7d752340c0e7c473
+    servername: passport.yandex.ru
+    tls: true
+    udp: true
+    uuid: 6a609bc5-ce0b-4384-860a-a4ce7c5759a0
+  - name: LTE proxy-47
+    type: vless
+    server: restful-haggot.xrent.cloud
+    port: 10666
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+    reality-opts:
+      public-key: FRAR39JkMtmSLC1fsZxLehEittKBpdTlZqj0cf3k4Rc
+      short-id: d94d3f6d21961589
+    servername: passport.yandex.ru
+    tls: true
+    udp: true
+    uuid: 6a609bc5-ce0b-4384-860a-a4ce7c5759a0
+  - name: LTE proxy-48
+    type: vless
+    server: 188.225.25.35
+    port: 443
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+    reality-opts:
+      public-key: rJ-fFNYXh7WW9LuYe1N71fh7nAEe5i09Pi5ZDSDlH1s
+      short-id: 4951a2313524dd8f
+    servername: ruru.formulacloud.top
+    tls: true
+    udp: true
+    uuid: 66c76bb5-a87c-4bc3-a6d0-403206e2f139
+  - name: LTE proxy-49
+    type: vless
+    server: cdn432.whitenetwork.cloud
+    port: 52831
+    client-fingerprint: firefox
+    network: xhttp
+    servername: origin.mtrxnet.click
+    tls: true
+    udp: true
+    uuid: c3d7240b-27ae-4eda-b850-d47f5a603da9
+    xhttp-opts:
+      host: origin.mtrxnet.click
+      mode: stream-up
+      path: /api/articles/live
+  - name: LTE proxy-50
+    type: vless
+    server: 188.225.36.238
+    port: 443
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+    servername: edge-de5.mystatic-cdn.ru
+    tls: true
+    udp: true
+    uuid: 1f628aef-1a6f-4e22-9b1d-ab3cd9bc6770
+  - name: LTE proxy-51
+    type: vless
+    server: 188.225.34.128
+    port: 443
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+    servername: edge-de5.mystatic-cdn.ru
+    tls: true
+    udp: true
+    uuid: 1f628aef-1a6f-4e22-9b1d-ab3cd9bc6770
+  - name: LTE proxy-52
+    type: vless
+    server: de2.hys.braidx.tech
+    port: 2443
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+    reality-opts:
+      public-key: gMkxxxFo7F0gLBe93tRyfDKFSH0YlfTFPd7X-fHfJ1s
+      short-id: abcded1950c35dcc
+    servername: de2.hys.braidx.tech
+    tls: true
+    udp: true
+    uuid: cb3427be-5ab9-4b95-8b17-032843034f34
+  - name: LTE proxy-53
+    type: vless
+    server: 178.248.236.229
+    port: 443
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+    reality-opts:
+      public-key: _3mkK8SY6YVqws73SUVPKL77tzxDVNUt4ag9J9ec-D0
+      short-id: d05a120d3506d2cc
+    servername: 144.hexdey.com
+    tls: true
+    udp: true
+    uuid: a71d6c6d-c95e-4ec1-a892-22e21733bf09
+  - name: LTE proxy-54
+    type: vless
+    server: polarladder.com
+    port: 2053
+    client-fingerprint: firefox
+    network: xhttp
+    servername: polarladder.com
+    tls: true
+    udp: true
+    uuid: 37af0181-5598-4aad-a040-d926bcb65757
+    xhttp-opts:
+      host: polarladder.com
+      mode: auto
+      path: /api/v1/upload
+  - name: LTE proxy-55
+    type: vless
+    server: locationfree.icu
+    port: 443
+    client-fingerprint: firefox
+    network: xhttp
+    servername: blog.cs-on.ru
+    tls: true
+    udp: true
+    uuid: ef1da56e-8117-42b4-bcd8-9094ebbdf985
+    xhttp-opts:
+      host: locationfree.icu
+      mode: packet-up
+      path: /static/report/4e04b7155d78/
+  - name: LTE proxy-56
+    type: vless
+    server: smartcdn.top
+    port: 443
+    client-fingerprint: firefox
+    network: ws
+    servername: smartcdn.top
+    tls: true
+    udp: true
+    uuid: 37af0181-5598-4aad-a040-d926bcb65757
+    ws-opts:
+      path: /useraction/collect/8a64b355ef0c/
+  - name: LTE proxy-57
+    type: vless
+    server: 188.225.46.6
+    port: 443
+    client-fingerprint: firefox
+    network: xhttp
+    servername: generating.b2ai.top
+    tls: true
+    udp: true
+    uuid: 8b911bca-7715-4adb-a755-f628847a0065
+    xhttp-opts:
+      host: 188.225.46.6
+      mode: auto
+      path: /api/v1/stream-3ca21ced73
+  - name: LTE proxy-58
+    type: vless
+    server: 188.225.36.19
+    port: 443
+    client-fingerprint: firefox
+    network: xhttp
+    servername: generating.b2ai.top
+    tls: true
+    udp: true
+    uuid: 8b911bca-7715-4adb-a755-f628847a0065
+    xhttp-opts:
+      host: 188.225.36.19
+      mode: auto
+      path: /api/v1/stream-3ca21ced73
+  - name: LTE proxy-59
+    type: vless
+    server: cdnok.b2ai.top
+    port: 443
+    client-fingerprint: firefox
+    network: xhttp
+    servername: cdnok.b2ai.top
+    tls: true
+    udp: true
+    uuid: 8b911bca-7715-4adb-a755-f628847a0065
+    xhttp-opts:
+      host: cdnok.b2ai.top
+      mode: packet-up
+      path: /api/v1/telemetry/call/
+  - name: ДЛЯ МОБИЛЬНОГО ИНТЕРНЕТА №2
+    type: vless
+    server: lib-d01bca8c.bnv.lol
+    port: 443
+    client-fingerprint: firefox
+    network: ws
+    servername: devcdn.icu
+    tls: true
+    udp: true
+    uuid: b432a23a-acff-425c-bf69-70480cd6ed09
+    ws-opts:
+      path: /edge/chunk/b2265efffa29/
+  - name: ДЛЯ МОБИЛЬНОГО ИНТЕРНЕТА №1
+    type: vless
+    server: lib-c891bfd9.bnv.lol
+    port: 443
+    client-fingerprint: firefox
+    network: xhttp
+    servername: cdnpl.worldfly.io
+    tls: true
+    udp: true
+    uuid: b432a23a-acff-425c-bf69-70480cd6ed09
+    xhttp-opts:
+      host: cdnpl.worldfly.io
+      mode: packet-up
+      path: /api/v1/assets/
+  - name: ДЛЯ МОБИЛЬНОГО ИНТЕРНЕТА №3
+    type: vless
+    server: lib-e63a0f26.bnv.lol
+    port: 443
+    client-fingerprint: firefox
+    network: xhttp
+    servername: cdn.white.gigobingo.ru
+    tls: true
+    udp: true
+    uuid: 6f77cc80-ad58-4637-84d0-aba1c296ad2f
+    xhttp-opts:
+      host: cdn.white.gigobingo.ru
+      mode: packet-up
+      path: /api/v1/assets
+  - name: ДЛЯ МОБИЛЬНОГО ИНТЕРНЕТА №4
+    type: vless
+    server: lib-dd3bb38d.bnv.lol
+    port: 443
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+    reality-opts:
+      public-key: C8jwxMahtF-BpgtauR6I6dVXCc0X8VM9nbFxDQ3LzF0
+      short-id: b4
+    servername: www.gosuslugi.ru
+    tls: true
+    udp: true
+    uuid: 3b51157f-fa41-4092-b378-376b0e2d3edb
+  - name: ДЛЯ МОБИЛЬНОГО ИНТЕРНЕТА №5
+    type: vless
+    server: lib-075ef7d4.bnv.lol
+    port: 443
+    client-fingerprint: firefox
+    network: tcp
+    reality-opts:
+      public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
+      short-id: db04ce8bdb8900f1
+    servername: 1.3.3.7
+    tls: true
+    udp: true
+    uuid: 3af3f8f0-569f-4dd3-be99-2ef4bfe7867c
+  - name: ДЛЯ МОБИЛЬНОГО ИНТЕРНЕТА №6
+    type: vless
+    server: lib-60478e63.bnv.lol
+    port: 443
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+    reality-opts:
+      public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
+      short-id: db04ce8bdb8900f1
+    servername: 1.3.3.7
+    tls: true
+    udp: true
+    uuid: 3af3f8f0-569f-4dd3-be99-2ef4bfe7867c
+  - name: ДЛЯ МОБИЛЬНОГО ИНТЕРНЕТА №9
+    type: vless
+    server: lib-9cc64bce.bnv.lol
+    port: 443
+    client-fingerprint: firefox
+    network: xhttp
+    servername: cdnpl.worldfly.io
+    tls: true
+    udp: true
+    uuid: b432a23a-acff-425c-bf69-70480cd6ed09
+    xhttp-opts:
+      host: cdnpl.worldfly.io
+      mode: packet-up
+      path: /api/v1/assets/
+  - name: ДЛЯ МОБИЛЬНОГО ИНТЕРНЕТА №10
+    type: vless
+    server: lib-e64e234a.bnv.lol
+    port: 443
+    client-fingerprint: firefox
+    network: xhttp
+    servername: pl2-cdn.insidenet.ru
+    tls: true
+    udp: true
+    uuid: 67a31bdf-5846-409d-8b49-3d795e1a2a4f
+    xhttp-opts:
+      host: pl2-cdn.insidenet.ru
+      mode: packet-up
+      path: /api/v4/segments/
+  - name: ДЛЯ МОБИЛЬНОГО ИНТЕРНЕТА №11
+    type: vless
+    server: lib-abec1e51.bnv.lol
+    port: 443
+    client-fingerprint: firefox
+    network: xhttp
+    servername: ch3-cdn.insidenet.ru
+    tls: true
+    udp: true
+    uuid: 67a31bdf-5846-409d-8b49-3d795e1a2a4f
+    xhttp-opts:
+      host: ch3-cdn.insidenet.ru
+      mode: packet-up
+      path: /api/v2/telemetry/
+  - name: ДЛЯ МОБИЛЬНОГО ИНТЕРНЕТА №12
+    type: vless
+    server: lib-5572a939.bnv.lol
+    port: 443
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+    reality-opts:
+      public-key: faqmj_uQDJVghT-q2jHC11Gl8ZMI-QzmXpWny_08DCo
+      short-id: 844a8254f4d5ebbf
+    servername: dc.insidenet.ru
+    tls: true
+    udp: true
+    uuid: 67a31bdf-5846-409d-8b49-3d795e1a2a4f
+  - name: ДЛЯ МОБИЛЬНОГО ИНТЕРНЕТА №13
+    type: vless
+    server: lib-e2e217fa.bnv.lol
+    port: 443
+    client-fingerprint: firefox
+    network: xhttp
+    servername: cdnpl.worldfly.io
+    tls: true
+    udp: true
+    uuid: b432a23a-acff-425c-bf69-70480cd6ed09
+    xhttp-opts:
+      host: cdnpl.worldfly.io
+      mode: packet-up
+      path: /api/v1/assets/
+  - name: ДЛЯ МОБИЛЬНОГО ИНТЕРНЕТА №14
+    type: vless
+    server: lib-af1a7955.bnv.lol
+    port: 443
+    client-fingerprint: firefox
+    network: xhttp
+    servername: kumar.oblachniy.ink
+    tls: true
+    udp: true
+    uuid: b198fbd9-2930-4b06-97b8-182a2794d088
+    xhttp-opts:
+      host: kumar.oblachniy.ink
+      mode: packet-up
+      path: /api/library/track/
+  - name: ДЛЯ МОБИЛЬНОГО ИНТЕРНЕТА №15
+    type: vless
+    server: lib-314377f2.bnv.lol
+    port: 443
+    client-fingerprint: firefox
+    network: ws
+    servername: x55cf8ug.devcdn.icu
+    tls: true
+    udp: true
+    uuid: b432a23a-acff-425c-bf69-70480cd6ed09
+    ws-opts:
+      path: /edge/chunk/b2265efffa29/
+  - name: ДЛЯ МОБИЛЬНОГО ИНТЕРНЕТА №16
+    type: vless
+    server: lib-2c5ca211.bnv.lol
+    port: 443
+    client-fingerprint: firefox
+    network: ws
+    servername: account.hpam.ru
+    tls: true
+    udp: true
+    uuid: c78cc6f1-0154-49c9-b5ba-3ca18d7b977b
+    ws-opts:
+      path: /useraction/metrics/a01e0709c6bc/
+  - name: ДЛЯ МОБИЛЬНОГО ИНТЕРНЕТА №19
+    type: vless
+    server: lib-6b81d1ad.bnv.lol
+    port: 443
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+    reality-opts:
+      public-key: KEZ93Y9VgoirI18wIpcfS3z8I9GiaiFe-GKqGdEPMmg
+      short-id: 6b86b273ff34
+    servername: deepl.com
+    tls: true
+    udp: true
+    uuid: 48818046-00b5-4576-bbe8-d2971fe0f844
+  - name: ДЛЯ МОБИЛЬНОГО ИНТЕРНЕТА №20
+    type: vless
+    server: lib-c849e49f.bnv.lol
+    port: 3099
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+    reality-opts:
+      public-key: R6XO56Bp8-HW5dW3oOu5WC-bYVBD9ed8KR_mx6oU6Ew
+      short-id: 5701ece7005006b8
+    servername: vimeo.com
+    tls: true
+    udp: true
+    uuid: cdfc923e-8d34-4b44-ac72-ab41ec560ba8
+  - name: ДЛЯ МОБИЛЬНОГО ИНТЕРНЕТА №21
+    type: vless
+    server: lib-f61e6f4d.bnv.lol
+    port: 443
+    client-fingerprint: firefox
+    network: xhttp
+    servername: origin5.pd-service.shop
+    tls: true
+    udp: true
+    uuid: cdfc923e-8d34-4b44-ac72-ab41ec560ba8
+    xhttp-opts:
+      host: origin4.pd-service.shop
+      mode: packet-up
+      path: /api-test-fi
+  - name: ДЛЯ МОБИЛЬНОГО ИНТЕРНЕТА №22
+    type: vless
+    server: lib-d1530e04.bnv.lol
+    port: 443
+    client-fingerprint: firefox
+    network: xhttp
+    servername: origin4.pd-service.shop
+    tls: true
+    udp: true
+    uuid: cdfc923e-8d34-4b44-ac72-ab41ec560ba8
+    xhttp-opts:
+      host: origin4.pd-service.shop
+      mode: packet-up
+      path: /api-test-fi
+  - name: ДЛЯ МОБИЛЬНОГО ИНТЕРНЕТА №23
+    type: vless
+    server: lib-934392ad.bnv.lol
+    port: 443
+    client-fingerprint: firefox
+    network: xhttp
+    servername: ycnl2.subs-sosavpn.ru
+    tls: true
+    udp: true
+    uuid: 4a3e1246-4ac0-4212-abac-a34008218f66
+    xhttp-opts:
+      host: ycnl2.subs-sosavpn.ru
+      mode: packet-up
+      path: /api/v4/media/session/poll.ts
+  - name: LTE proxy-79
+    type: vless
+    server: lib-df25ec15.bnv.lol
+    port: 443
+    client-fingerprint: firefox
+    network: xhttp
+    servername: ycfl.subs-sosavpn.ru
+    tls: true
+    udp: true
+    uuid: 4a3e1246-4ac0-4212-abac-a34008218f66
+    xhttp-opts:
+      host: ycfl.subs-sosavpn.ru
+      mode: packet-up
+      path: /api/v4/media/session/poll.ts
+  - name: LTE proxy-80
+    type: vless
+    server: lib-7833ee3a.bnv.lol
+    port: 8443
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+    reality-opts:
+      public-key: DulhUFMYzxIsucjtPONJQMszzyi9V6bqQ9WI3GjGFAY
+      short-id: abc123
+    servername: ya.ru
+    tls: true
+    udp: true
+    uuid: 8f092ef0-a7e6-03e9-b989-836aebc00ff7
+  - name: LTE proxy-81
+    type: vless
+    server: lib-8f3b4809.bnv.lol
+    port: 8443
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+    reality-opts:
+      public-key: DulhUFMYzxIsucjtPONJQMszzyi9V6bqQ9WI3GjGFAY
+      short-id: abc123
+    servername: ya.ru
+    tls: true
+    udp: true
+    uuid: 8f092ef0-a7e6-03e9-b989-836aebc00ff7
+  - name: LTE proxy-82
+    type: vless
+    server: lib-16efab55.bnv.lol
+    port: 8443
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+    reality-opts:
+      public-key: DulhUFMYzxIsucjtPONJQMszzyi9V6bqQ9WI3GjGFAY
+      short-id: abc123
+    servername: ya.ru
+    tls: true
+    udp: true
+    uuid: 8f092ef0-a7e6-03e9-b989-836aebc00ff7
+  - name: LTE proxy-83
+    type: vless
+    server: lib-5a4bafd9.bnv.lol
+    port: 443
+    client-fingerprint: firefox
+    network: xhttp
+    servername: wl2.g-late.com
+    tls: true
+    udp: true
+    uuid: b1070a4d-ad4a-415d-b31a-8a4f6b93602e
+    xhttp-opts:
+      host: wl2.g-late.com
+      mode: packet-up
+      path: /api/v4/59ebf8
+  - name: Латвия
+    type: vless
+    server: finland3.banovano.space
+    port: 2053
+    client-fingerprint: firefox
+    network: grpc
+    reality-opts:
+      public-key: hMUi5nNc3mmdeNvyINFdtTMWIj1ocqx_802hqY_suDc
+      short-id: 02ba375e507904
+    servername: finland3.banovano.space
+    tls: true
+    udp: true
+    uuid: 52d0ae8c-31a9-44e9-877c-3d41d85fa246
+  - name: Финляндия
+    type: vless
+    server: finland3.banovano.space
+    port: 8443
+    client-fingerprint: firefox
+    network: xhttp
+    reality-opts:
+      public-key: 2VlrtDpnPd8YgeOtg-E0crPcXHoqkUIJIBkXYMdLN3k
+      short-id: 7c5843fc969ed9
+    servername: finland3.banovano.space
+    tls: true
+    udp: true
+    uuid: f766d72b-1d8d-4cb1-bb1e-235e33db8cd0
+    xhttp-opts:
+      mode: auto
+  - name: Польша
+    type: vless
+    server: poland3.banovano.space
+    port: 9443
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+    reality-opts:
+      public-key: SqmP5dBWuifwFDus3lGcmmukfBCnteYmne45RhxLaHQ
+      short-id: f9
+    servername: poland3.banovano.space
+    tls: true
+    udp: true
+    uuid: 29f2c925-b79d-4697-8ca5-189473bf40c6
+  - name: Германия 2
+    type: vless
+    server: germany4.banovano.space
+    port: 2053
+    client-fingerprint: firefox
+    network: grpc
+    reality-opts:
+      public-key: ZtchNXQkLsyHgv2G4EDUH4AbEYvTSi3xi4kfIAPb3X0
+      short-id: da
+    servername: germany4.banovano.space
+    tls: true
+    udp: true
+    uuid: 1039b1ee-565a-4621-8ec9-d4ef62b911e4
+  - name: 'Германия #2'
+    type: vless
+    server: germany4.banovano.space
+    port: 8443
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+    reality-opts:
+      public-key: rn84_Fl8vlwn6KtSCiqfO2q9e9rJ8-v7vS8ZjmZ5CkQ
+      short-id: '46'
+    servername: germany4.banovano.space
+    tls: true
+    udp: true
+    uuid: b52b781d-2074-4951-a164-ff6e2cf5d1ce
+  - name: Швеция
+    type: vless
+    server: sweden2.banovano.space
+    port: 2053
+    client-fingerprint: firefox
+    network: grpc
+    reality-opts:
+      public-key: 4qCmUMt8-QSjV5P960vZuDcqG_yeajQlsZElXeCJQgI
+      short-id: c8
+    servername: sweden2.banovano.space
+    tls: true
+    udp: true
+    uuid: 22096b73-2638-467d-bc4d-452e832dda5b
+  - name: Финляндия (резерв)
+    type: vless
+    server: finland2.banovano.space
+    port: 443
+    client-fingerprint: firefox
+    network: grpc
+    servername: finland2.banovano.space
+    tls: true
+    udp: true
+    uuid: 4453fea4-65d0-4724-8ecc-73de39bcc641
+  - name: США
+    type: vless
+    server: poland3.banovano.space
+    port: 8443
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+    reality-opts:
+      public-key: wmWFF6Ng3M0Op4YB2ZmoKMXhrPoHPQt2oUvQmBCO4G4
+      short-id: 5855a8
+    servername: poland3.banovano.space
+    tls: true
+    udp: true
+    uuid: 497922d3-aa63-4f45-837e-90e5a16622d6
+  - name: Эстония
+    type: vless
+    server: sweden2.banovano.space
+    port: 8443
+    client-fingerprint: firefox
+    network: xhttp
+    reality-opts:
+      public-key: CkyAD7zQ0SndkQ4tXkYBEEhetiAwssk3eXWJKQ2ZnkU
+      short-id: 84dc7973
+    servername: sweden2.banovano.space
+    tls: true
+    udp: true
+    uuid: b6bf3ab7-00ae-40d9-9eeb-9e4bfdafb63b
+    xhttp-opts:
+      mode: auto
+  - name: Нидерланды
+    type: vless
+    server: netherlands3.banovano.space
+    port: 33517
+    client-fingerprint: firefox
+    network: xhttp
+    reality-opts:
+      public-key: baHq6sp0MwdJZbXy6AQGHi6szdmUzx6Xk5RRiTQ1XUw
+      short-id: 6f
+    servername: api15.yandex-cdn-mirror.ru
+    tls: true
+    udp: true
+    uuid: 09ba9bec-654b-462b-a4bc-c909fb323e2d
+    xhttp-opts:
+      mode: auto
   - name: Румыния N1 (Торренты)
     type: vless
     server: 196.245.156.50
@@ -914,30 +2282,7 @@ proxies:
     tls: true
     udp: true
     uuid: d486ec4b-b3e1-4922-bcfe-b0c49725f702
-  - name: Швеция
-    type: vless
-    server: sweden2.banovano.space
-    port: 2053
-    client-fingerprint: firefox
-    network: grpc
-    reality-opts:
-      public-key: 4qCmUMt8-QSjV5P960vZuDcqG_yeajQlsZElXeCJQgI
-      short-id: c8
-    servername: sweden2.banovano.space
-    tls: true
-    udp: true
-    uuid: 22096b73-2638-467d-bc4d-452e832dda5b
-  - name: Финляндия (резерв)
-    type: vless
-    server: finland2.banovano.space
-    port: 443
-    client-fingerprint: firefox
-    network: grpc
-    servername: finland2.banovano.space
-    tls: true
-    udp: true
-    uuid: 4453fea4-65d0-4724-8ecc-73de39bcc641
-  - name: Финляндия
+  - name: Финляндия 2
     type: vless
     server: finland3.banovano.space
     port: 8443
@@ -953,7 +2298,7 @@ proxies:
     xhttp-opts:
       mode: auto
       path: /
-  - name: Эстония
+  - name: Эстония 2
     type: vless
     server: sweden2.banovano.space
     port: 8443
@@ -969,19 +2314,6 @@ proxies:
     xhttp-opts:
       mode: auto
       path: /
-  - name: Латвия
-    type: vless
-    server: finland3.banovano.space
-    port: 2053
-    client-fingerprint: firefox
-    network: grpc
-    reality-opts:
-      public-key: hMUi5nNc3mmdeNvyINFdtTMWIj1ocqx_802hqY_suDc
-      short-id: 02ba375e507904
-    servername: finland3.banovano.space
-    tls: true
-    udp: true
-    uuid: 52d0ae8c-31a9-44e9-877c-3d41d85fa246
   - name: 🇩🇪 o1_Germany
     type: vless
     server: test.golubika.cloud
@@ -1022,7 +2354,7 @@ proxies:
     tls: true
     udp: true
     uuid: 3cb462d6-ba85-49f2-bb80-0899a5e0391b
-  - name: Нидерланды
+  - name: Нидерланды 2
     type: vless
     server: netherlands3.banovano.space
     port: 33517
@@ -1088,7 +2420,7 @@ proxies:
     tls: true
     udp: true
     uuid: 3cb462d6-ba85-49f2-bb80-0899a5e0391b
-  - name: 'Германия #2'
+  - name: 'Германия #2 2'
     type: vless
     server: germany4.banovano.space
     port: 8443
@@ -1130,7 +2462,7 @@ proxies:
     tls: true
     udp: true
     uuid: 3cb462d6-ba85-49f2-bb80-0899a5e0391b
-  - name: Польша
+  - name: Польша 2
     type: vless
     server: poland3.banovano.space
     port: 9443
@@ -1144,7 +2476,7 @@ proxies:
     tls: true
     udp: true
     uuid: 29f2c925-b79d-4697-8ca5-189473bf40c6
-  - name: Финляндия 2
+  - name: Финляндия 3
     type: vless
     server: 95.174.95.10
     port: 443
@@ -1200,7 +2532,7 @@ proxies:
     tls: true
     udp: true
     uuid: 3cb462d6-ba85-49f2-bb80-0899a5e0391b
-  - name: Польша 2
+  - name: Польша 3
     type: vless
     server: 176.109.104.71
     port: 35443
@@ -1213,7 +2545,7 @@ proxies:
     tls: true
     udp: true
     uuid: 9afb299b-c553-4013-b506-dc215c130b15
-  - name: США
+  - name: США 2
     type: vless
     server: us-n1.wolffast.net
     port: 443
@@ -1227,19 +2559,6 @@ proxies:
     tls: true
     udp: true
     uuid: 958e4608-6994-44df-975f-221ad2d0b132
-  - name: Германия 2
-    type: vless
-    server: germany4.banovano.space
-    port: 2053
-    client-fingerprint: firefox
-    network: grpc
-    reality-opts:
-      public-key: ZtchNXQkLsyHgv2G4EDUH4AbEYvTSi3xi4kfIAPb3X0
-      short-id: da
-    servername: germany4.banovano.space
-    tls: true
-    udp: true
-    uuid: 1039b1ee-565a-4621-8ec9-d4ef62b911e4
   - name: Швеция 2
     type: vless
     server: se.menzyla.ru
@@ -1256,7 +2575,7 @@ proxies:
     xhttp-opts:
       mode: stream-one
       path: /
-  - name: США 2
+  - name: США 3
     type: vless
     server: us-n1.wolffast.net
     port: 443
@@ -1465,7 +2784,7 @@ proxies:
     tls: true
     udp: true
     uuid: 3cb462d6-ba85-49f2-bb80-0899a5e0391b
-  - name: США 3
+  - name: США 4
     type: vless
     server: poland3.banovano.space
     port: 8443
@@ -1575,7 +2894,7 @@ proxies:
     uuid: 7daed536-c1c8-497f-a4d5-3865dc3e08be
     xhttp-opts:
       mode: stream-one
-  - name: Нидерланды 2
+  - name: Нидерланды 3
     type: vless
     server: menzyla.ru
     port: 443
