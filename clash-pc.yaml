@@ -91,6 +91,28 @@ proxy-groups:
   - name: Ключики ;3
     type: select
     proxies:
+      - Авто до 10 Гбит/с
+      - LTE Авто Россия · ×1
+      - Нидерланды
+      - Австрия
+      - Польша
+      - США
+      - США 2
+      - Чехия
+      - Италия
+      - Индия
+      - ОАЭ
+      - Сингапур
+      - Турция
+      - Корея
+      - Португалия
+      - 'LTE Россия #1 · ×0.5'
+      - 'LTE Россия #2 · ×0.5'
+      - 'LTE Россия #3 · ×0.5'
+      - 'LTE Россия #4 · ×0.1'
+      - 'LTE Россия #5 · ×0.2'
+      - 'LTE Россия #8 · ×0.5'
+      - Россия из-за рубежа
       - proxy
       - Основной — Финляндия
       - Швеция
@@ -100,19 +122,19 @@ proxy-groups:
       - Эстония
       - Великобритания
       - Эстония 2
-      - Нидерланды
-      - o5_Netherland
       - Нидерланды 2
+      - o5_Netherland
+      - Нидерланды 3
       - Основной — Германия
       - Авто выбор
       - Белый список 33b
-      - Польша
+      - Польша 2
       - Белый список 24b
       - 'Автовыбор: Основные'
       - proxy 2
-      - Польша 2
-      - Нидерланды 3
       - Польша 3
+      - Нидерланды 4
+      - Польша 4
       - Белый список 24b 2
       - Основной — Латвия
       - Основной — Польша
@@ -123,7 +145,7 @@ proxy-groups:
       - proxy 3
       - Беларусь
       - 'Германия #2'
-      - Нидерланды 4
+      - Нидерланды 5
       - LTE proxy-5
       - 'Германия #2 2'
       - LTE proxy-45
@@ -140,9 +162,9 @@ proxy-groups:
       - Белый список 23b 2
       - Белый список 21b
       - 'При ограничениях #3'
-      - Италия
+      - Италия 2
       - Белый список 21a
-      - Чехия
+      - Чехия 2
       - Белый список 21a 2
       - Белый список 21b 2
       - 'При ограничениях #4'
@@ -159,19 +181,19 @@ proxy-groups:
       - 🇨🇳 fallback 2
       - 🇫🇷 o4_France_Cascade
       - Белый список 30a
-      - Португалия
+      - Португалия 2
       - LTE proxy-23
       - 🇪🇪 o3_RU_Estonia
       - Египет
       - Румыния N1 (Торренты)
       - Швеция 2
-      - Турция
+      - Турция 2
       - Германия 2
       - Эстония 3
       - Основной — США
-      - США
-      - США 2
       - США 3
+      - США 4
+      - США 5
       - LTE proxy-46
       - proxy 4
       - Казахстан
@@ -179,18 +201,18 @@ proxy-groups:
       - Основной — Канада
       - Казахстан 2
       - Основной — Казахстан
-      - США 4
-      - США 5
+      - США 6
+      - США 7
       - Япония
       - 🇷🇺 bridge-russia
-      - ОАЭ
+      - ОАЭ 2
       - Белые списки | 2
       - Основной — Австралия
       - LTE proxy-14
       - LTE proxy-27
       - Белый список 33a
       - LTE proxy-47
-      - Польша 4
+      - Польша 5
       - Австрия (Gemini)
       - Франция (Gemini, Торренты)
       - Германия
@@ -492,6 +514,319 @@ rules:
   - RULE-SET,direct-ips,DIRECT
   - MATCH,Ключики ;3
 proxies:
+  - name: Авто до 10 Гбит/с
+    type: vless
+    server: de.delivery-4f1c.com
+    port: 443
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+    reality-opts:
+      public-key: z_Rn0Vvq1GB39RhN6v7DhdtD-kS0XZa_je0h-no_hWs
+      short-id: 59eee550a1014198
+    servername: de.delivery-4f1c.com
+    tls: true
+    udp: true
+    uuid: b53a7bc1-542a-4a24-9381-94e83554abe1
+  - name: LTE Авто Россия · ×1
+    type: vless
+    server: 185.86.147.241
+    port: 443
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+    reality-opts:
+      public-key: 1V__35VyFTXeyxkk0_IyLXJxDPv7KeRs44Nr1_SLZ18
+      short-id: 59eee550a1014198
+    servername: cindercore.dev
+    tls: true
+    udp: true
+    uuid: b53a7bc1-542a-4a24-9381-94e83554abe1
+  - name: Нидерланды
+    type: vless
+    server: nl.shard-2b7c.com
+    port: 443
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+    reality-opts:
+      public-key: X7y7GGY_pGPtTwr-9k0OKZBuE_n5MVeFkNXou7TQ_DY
+      short-id: 41b42908df0833a6
+    servername: nl.shard-2b7c.com
+    tls: true
+    udp: true
+    uuid: b53a7bc1-542a-4a24-9381-94e83554abe1
+  - name: Австрия
+    type: vless
+    server: at.shard-2b7c.com
+    port: 443
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+    reality-opts:
+      public-key: wpZDT_592emHu309qN-7-qceofbMJzoAdIx9m9RFJGg
+      short-id: 98753667b2406829
+    servername: at.shard-2b7c.com
+    tls: true
+    udp: true
+    uuid: b53a7bc1-542a-4a24-9381-94e83554abe1
+  - name: Польша
+    type: vless
+    server: pl1.relay-9e0b.com
+    port: 443
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+    reality-opts:
+      public-key: JoIT56dCrKkeYJWSPA6-rllSqlXYKPg1rC2w7D_xogU
+      short-id: 212a8beb0ea4817b
+    servername: pl1.relay-9e0b.com
+    tls: true
+    udp: true
+    uuid: b53a7bc1-542a-4a24-9381-94e83554abe1
+  - name: США
+    type: vless
+    server: us1.relay-9e0b.com
+    port: 443
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+    reality-opts:
+      public-key: S6t9-gOX2mxWKNGvGSJ8NxDdlJy78d4gN2-wv2d0hFw
+      short-id: 8319913f2e5f5711
+    servername: us1.relay-9e0b.com
+    tls: true
+    udp: true
+    uuid: b53a7bc1-542a-4a24-9381-94e83554abe1
+  - name: США 2
+    type: vless
+    server: us.shard-2b7c.com
+    port: 443
+    client-fingerprint: firefox
+    grpc-opts:
+      grpc-service-name: grpc
+    network: grpc
+    reality-opts:
+      public-key: S6t9-gOX2mxWKNGvGSJ8NxDdlJy78d4gN2-wv2d0hFw
+      short-id: 8319913f2e5f5711
+    servername: us.shard-2b7c.com
+    tls: true
+    udp: true
+    uuid: b53a7bc1-542a-4a24-9381-94e83554abe1
+  - name: Чехия
+    type: vless
+    server: czr4.storage-f4a1.com
+    port: 443
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+    reality-opts:
+      public-key: awSXFMuiyWklutN7WsnOrRuZ_VQ7BVSeveLvVpUoVjY
+      short-id: a0cffca602c71c2e
+    servername: czr4.storage-f4a1.com
+    tls: true
+    udp: true
+    uuid: b53a7bc1-542a-4a24-9381-94e83554abe1
+  - name: Италия
+    type: vless
+    server: 194.87.159.184
+    port: 7443
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+    reality-opts:
+      public-key: kAzx6GNWmGt23WF5vJX59Qki3msisrtWz2yt53iXfRU
+      short-id: cd4c75292ce9cf5f
+    servername: itr.storage-f4a1.com
+    tls: true
+    udp: true
+    uuid: b53a7bc1-542a-4a24-9381-94e83554abe1
+  - name: Индия
+    type: vless
+    server: inr4.storage-f4a1.com
+    port: 5443
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+    reality-opts:
+      public-key: -YC9uE8ICF1ub3QvSuukIy-woZJucpD3PalAgFyuPUY
+      short-id: 8764ccb4834c5053
+    servername: inr4.storage-f4a1.com
+    tls: true
+    udp: true
+    uuid: b53a7bc1-542a-4a24-9381-94e83554abe1
+  - name: ОАЭ
+    type: vless
+    server: aer.storage-f4a1.com
+    port: 443
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+    reality-opts:
+      public-key: 0MGC-zWxPBkP1p2pq5Al6O1M7hicmpdAdb_AeOmUL1o
+      short-id: 41a2094624ed725c
+    servername: aer.storage-f4a1.com
+    tls: true
+    udp: true
+    uuid: b53a7bc1-542a-4a24-9381-94e83554abe1
+  - name: Сингапур
+    type: vless
+    server: sgr.storage-f4a1.com
+    port: 8443
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+    reality-opts:
+      public-key: 5ld1Ffz1h1TuH1UgX0xsUJkJpEI9YSyi3NnVfS2Yv1o
+      short-id: deadf212268a0560
+    servername: sgr.storage-f4a1.com
+    tls: true
+    udp: true
+    uuid: b53a7bc1-542a-4a24-9381-94e83554abe1
+  - name: Турция
+    type: vless
+    server: trr2.storage-f4a1.com
+    port: 5443
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+    reality-opts:
+      public-key: 9Cvc0oWRlVA0HZ9Uv8gKdBPjFiUcFBazPAsqDoZUgmc
+      short-id: 38b849f18dc32ecb
+    servername: trr2.storage-f4a1.com
+    tls: true
+    udp: true
+    uuid: b53a7bc1-542a-4a24-9381-94e83554abe1
+  - name: Корея
+    type: vless
+    server: krr.storage-f4a1.com
+    port: 8443
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+    reality-opts:
+      public-key: ixUOwip12xp0_bjhxFpaB6dDSgH4VpxV8XOjzY3OyF8
+      short-id: 5024d5cde83d2356
+    servername: krr.storage-f4a1.com
+    tls: true
+    udp: true
+    uuid: b53a7bc1-542a-4a24-9381-94e83554abe1
+  - name: Португалия
+    type: vless
+    server: ptr.storage-f4a1.com
+    port: 6443
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+    reality-opts:
+      public-key: jODUPKAWisqGkSKr55MGC5s-WGDD4hiBppX3PDBWnVU
+      short-id: 05fc28290d3d5d43
+    servername: ptr.storage-f4a1.com
+    tls: true
+    udp: true
+    uuid: b53a7bc1-542a-4a24-9381-94e83554abe1
+  - name: 'LTE Россия #1 · ×0.5'
+    type: vless
+    server: 80.93.187.72
+    port: 8443
+    client-fingerprint: firefox
+    grpc-opts:
+      grpc-service-name: grpc
+    network: grpc
+    reality-opts:
+      public-key: K_8CkSWnFAydSmPUwLnU0KtuByoTKpLLJq3fyo7mSlg
+      short-id: 6cb1cc990844be02
+    servername: cdnc.storage-f4a1.com
+    tls: true
+    udp: true
+    uuid: b53a7bc1-542a-4a24-9381-94e83554abe1
+  - name: 'LTE Россия #2 · ×0.5'
+    type: vless
+    server: 46.8.210.157
+    port: 443
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+    reality-opts:
+      public-key: BKLsWEbA6ggKsUB8PA3As5DbE512Ik0ewlg7Rfvh9ng
+      short-id: 4bd20811cc0e5573
+    servername: cdn124.storage-f4a1.com
+    tls: true
+    udp: true
+    uuid: b53a7bc1-542a-4a24-9381-94e83554abe1
+  - name: 'LTE Россия #3 · ×0.5'
+    type: vless
+    server: 46.8.210.16
+    port: 443
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+    reality-opts:
+      public-key: u_4vjHIer-fPAp3uoX-4mxXK310bdV0yJqqtPfOSjlM
+      short-id: d02adf5348bcf41c
+    servername: cdn125.storage-f4a1.com
+    tls: true
+    udp: true
+    uuid: b53a7bc1-542a-4a24-9381-94e83554abe1
+  - name: 'LTE Россия #4 · ×0.1'
+    type: vless
+    server: 91.185.83.95
+    port: 443
+    client-fingerprint: firefox
+    grpc-opts:
+      grpc-service-name: grpc
+    network: grpc
+    reality-opts:
+      public-key: AwIcnyMwLivH2N-GBVdkRD1YWP3nsNCvIf-UPQtnpGA
+      short-id: 565330e9ddd002c3
+    servername: st1.storage-f4a1.com
+    tls: true
+    udp: true
+    uuid: b53a7bc1-542a-4a24-9381-94e83554abe1
+  - name: 'LTE Россия #5 · ×0.2'
+    type: vless
+    server: 185.134.201.226
+    port: 443
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+    reality-opts:
+      public-key: 1V__35VyFTXeyxkk0_IyLXJxDPv7KeRs44Nr1_SLZ18
+      short-id: 59eee550a1014198
+    servername: voidbytes.dev
+    tls: true
+    udp: true
+    uuid: b53a7bc1-542a-4a24-9381-94e83554abe1
+  - name: 'LTE Россия #8 · ×0.5'
+    type: vless
+    server: tochkacdn.top
+    port: 443
+    alpn:
+      - http/1.1
+    client-fingerprint: firefox
+    network: ws
+    servername: region.game
+    tls: true
+    udp: true
+    uuid: b53a7bc1-542a-4a24-9381-94e83554abe1
+    ws-opts:
+      headers:
+        Host: tochkacdn.top
+      path: /player/collect/cf07858f9f4b/
+  - name: Россия из-за рубежа
+    type: vless
+    server: 194.87.159.185
+    port: 443
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+    network: tcp
+    reality-opts:
+      public-key: d3Wr4tJiBTG0ldy0p5qz9Gea40_8aub9Iv1oXNAHCC8
+      short-id: b9771653a69bd375
+    servername: ads.x5.ru
+    tls: true
+    udp: true
+    uuid: b53a7bc1-542a-4a24-9381-94e83554abe1
   - name: proxy
     type: vless
     server: ee.puflino.com
@@ -617,7 +952,7 @@ proxies:
     xhttp-opts:
       mode: auto
       path: /
-  - name: Нидерланды
+  - name: Нидерланды 2
     type: vless
     server: netherlands3.banovano.space
     port: 33517
@@ -647,7 +982,7 @@ proxies:
     tls: true
     udp: true
     uuid: a8cd8251-92d2-4432-9ade-42566b1729da
-  - name: Нидерланды 2
+  - name: Нидерланды 3
     type: vless
     server: netherlands3.banovano.space
     port: 33517
@@ -704,7 +1039,7 @@ proxies:
     tls: true
     udp: true
     uuid: e384e5e8-a2bc-4042-a157-635b86d6b90f
-  - name: Польша
+  - name: Польша 2
     type: vless
     server: poland3.banovano.space
     port: 9443
@@ -759,7 +1094,7 @@ proxies:
     tls: true
     udp: true
     uuid: 3cb462d6-ba85-49f2-bb80-0899a5e0391b
-  - name: Польша 2
+  - name: Польша 3
     type: vless
     server: 176.109.104.71
     port: 35443
@@ -772,7 +1107,7 @@ proxies:
     tls: true
     udp: true
     uuid: 9afb299b-c553-4013-b506-dc215c130b15
-  - name: Нидерланды 3
+  - name: Нидерланды 4
     type: vless
     server: nl-n1.gsupport.support
     port: 443
@@ -786,7 +1121,7 @@ proxies:
     tls: true
     udp: true
     uuid: 958e4608-6994-44df-975f-221ad2d0b132
-  - name: Польша 3
+  - name: Польша 4
     type: vless
     server: poland3.banovano.space
     port: 9443
@@ -941,7 +1276,7 @@ proxies:
     tls: true
     udp: true
     uuid: b52b781d-2074-4951-a164-ff6e2cf5d1ce
-  - name: Нидерланды 4
+  - name: Нидерланды 5
     type: vless
     server: menzyla.ru
     port: 443
@@ -1196,7 +1531,7 @@ proxies:
     tls: true
     udp: true
     uuid: 562916d8-1dc6-4c55-9949-a257254892ca
-  - name: Италия
+  - name: Италия 2
     type: vless
     server: 31.58.94.14
     port: 443
@@ -1225,7 +1560,7 @@ proxies:
     tls: true
     udp: true
     uuid: 2ef168f7-77f7-4cb7-9b4e-fa777b4c5d6a
-  - name: Чехия
+  - name: Чехия 2
     type: vless
     server: cz-n1.gsupport.support
     port: 4443
@@ -1470,7 +1805,7 @@ proxies:
     tls: true
     udp: true
     uuid: e384e5e8-a2bc-4042-a157-635b86d6b90f
-  - name: Португалия
+  - name: Португалия 2
     type: vless
     server: pt-n1.gsupport.support
     port: 443
@@ -1570,7 +1905,7 @@ proxies:
     xhttp-opts:
       mode: stream-one
       path: /
-  - name: Турция
+  - name: Турция 2
     type: vless
     server: tr-n1.gsupport.support
     port: 443
@@ -1625,7 +1960,7 @@ proxies:
     tls: true
     udp: true
     uuid: 562916d8-1dc6-4c55-9949-a257254892ca
-  - name: США
+  - name: США 3
     type: vless
     server: us-n1.wolffast.net
     port: 443
@@ -1639,7 +1974,7 @@ proxies:
     tls: true
     udp: true
     uuid: aa54d9f0-35aa-430a-a64d-d406022a9b8c
-  - name: США 2
+  - name: США 4
     type: vless
     server: us-n1.wolffast.net
     port: 443
@@ -1653,7 +1988,7 @@ proxies:
     tls: true
     udp: true
     uuid: 958e4608-6994-44df-975f-221ad2d0b132
-  - name: США 3
+  - name: США 5
     type: vless
     server: us-n1.wolffast.net
     port: 443
@@ -1780,7 +2115,7 @@ proxies:
     tls: true
     udp: true
     uuid: 562916d8-1dc6-4c55-9949-a257254892ca
-  - name: США 4
+  - name: США 6
     type: vless
     server: poland3.banovano.space
     port: 8443
@@ -1794,7 +2129,7 @@ proxies:
     tls: true
     udp: true
     uuid: 497922d3-aa63-4f45-837e-90e5a16622d6
-  - name: США 5
+  - name: США 7
     type: vless
     server: poland3.banovano.space
     port: 8443
@@ -1832,7 +2167,7 @@ proxies:
     tls: true
     udp: true
     uuid: 3cb462d6-ba85-49f2-bb80-0899a5e0391b
-  - name: ОАЭ
+  - name: ОАЭ 2
     type: vless
     server: uae.gsupport.support
     port: 4443
@@ -1928,7 +2263,7 @@ proxies:
     tls: true
     udp: true
     uuid: 6a609bc5-ce0b-4384-860a-a4ce7c5759a0
-  - name: Польша 4
+  - name: Польша 5
     type: vless
     server: pl-o1.gsupport.support
     port: 443
