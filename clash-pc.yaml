@@ -365,22 +365,6 @@ rule-providers:
     path: ./ruleset/category-ru.mrs
     proxy: Ключики ;3
     interval: 86400
-  microsoft:
-    type: http
-    behavior: domain
-    format: mrs
-    url: https://cdn.jsdelivr.net/gh/hydraponique/roscomvpn-geosite/release/mihomo/microsoft.mrs
-    path: ./ruleset/microsoft.mrs
-    proxy: Ключики ;3
-    interval: 86400
-  apple:
-    type: http
-    behavior: domain
-    format: mrs
-    url: https://cdn.jsdelivr.net/gh/hydraponique/roscomvpn-geosite/release/mihomo/apple.mrs
-    path: ./ruleset/apple.mrs
-    proxy: Ключики ;3
-    interval: 86400
   epicgames:
     type: http
     behavior: domain
@@ -501,8 +485,6 @@ rules:
   - RULE-SET,win-spy,REJECT-DROP
   - RULE-SET,category-ads,REJECT-DROP
   - RULE-SET,twitch,DIRECT
-  - RULE-SET,microsoft,DIRECT
-  - RULE-SET,apple,DIRECT
   - RULE-SET,pinterest,DIRECT
   - RULE-SET,ru-apps,DIRECT
   - DOMAIN-SUFFIX,ru,DIRECT
